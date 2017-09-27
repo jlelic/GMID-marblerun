@@ -1,0 +1,661 @@
+﻿Log file open, 09/27/17 09:40:28
+LogInit:Display: Running engine for game: MarbleRun
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-966815115) SRandInit(-966815115).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.131483
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3514769
+LogInit: Engine Version: 4.16.2-3514769+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jun 29 2017 02:03:24
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.09.27-07.40.29:455][  0]LogInit: Selected Device Profile: [Windows]
+[2017.09.27-07.40.29:455][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.09.27-07.40.29:477][  0]LogInit: Computer: LAPTOP-82FNG628
+[2017.09.27-07.40.29:477][  0]LogInit: User: Acer
+[2017.09.27-07.40.29:477][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.09.27-07.40.29:477][  0]LogInit: High frequency timer resolution =2.531251 MHz
+[2017.09.27-07.40.29:477][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2017.09.27-07.40.29:477][  0]LogMemory: Platform Memory Stats for Windows
+[2017.09.27-07.40.29:477][  0]LogMemory: Process Physical Memory: 273.52 MB used, 273.52 MB peak
+[2017.09.27-07.40.29:477][  0]LogMemory: Process Virtual Memory: 261.00 MB used, 261.00 MB peak
+[2017.09.27-07.40.29:477][  0]LogMemory: Physical Memory: 7285.87 MB used,  8928.29 MB free, 16214.16 MB total
+[2017.09.27-07.40.29:477][  0]LogMemory: Virtual Memory: 648.80 MB used,  8928.29 MB free, 134217728.00 MB total
+[2017.09.27-07.40.29:589][  0]LogInit: Using OS detected language (en-US).
+[2017.09.27-07.40.29:589][  0]LogInit: Using OS detected locale (en-US).
+[2017.09.27-07.40.29:595][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.09.27-07.40.30:988][  0]LogD3D11RHI: D3D11 adapters:
+[2017.09.27-07.40.31:029][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
+[2017.09.27-07.40.31:029][  0]LogD3D11RHI:       4064/0/8107 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.09.27-07.40.31:036][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2017.09.27-07.40.31:036][  0]LogD3D11RHI:       128/0/8107 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.09.27-07.40.31:037][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.09.27-07.40.31:037][  0]LogD3D11RHI:       0/0/8107 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.09.27-07.40.31:037][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.09.27-07.40.31:045][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.09.27-07.40.31:045][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
+[2017.09.27-07.40.31:045][  0]LogWindows: EnumDisplayDevices:
+[2017.09.27-07.40.31:046][  0]LogWindows:    0. 'Intel(R) HD Graphics 530' (P:0 D:1)
+[2017.09.27-07.40.31:046][  0]LogWindows:    1. 'Intel(R) HD Graphics 530' (P:1 D:1)
+[2017.09.27-07.40.31:046][  0]LogWindows:    2. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.09.27-07.40.31:046][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.09.27-07.40.31:046][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
+[2017.09.27-07.40.31:046][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.09.27-07.40.31:046][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.09.27-07.40.31:046][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.09.27-07.40.31:069][  0]LogD3D11RHI: Async texture creation enabled
+[2017.09.27-07.40.31:084][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.09.27-07.40.31:085][  0]LogShaderCompilers: Guid format shader working directory is -15 characters bigger than the processId version (../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Intermediate/Shaders/WorkingDirectory/11248/).
+[2017.09.27-07.40.31:085][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Acer/AppData/Local/Temp/UnrealShaderWorkingDir/4A1F77104AD866C22B5065B606684AE4/'.
+[2017.09.27-07.40.31:085][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.09.27-07.40.32:687][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.09.27-07.40.32:765][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.09.27-07.40.32:840][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.09.27-07.40.32:931][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.09.27-07.40.33:023][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.09.27-07.40.33:116][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.09.27-07.40.33:192][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.09.27-07.40.33:272][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.09.27-07.40.33:339][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.09.27-07.40.33:421][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.09.27-07.40.33:521][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.09.27-07.40.33:601][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.09.27-07.40.33:688][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.09.27-07.40.33:775][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.09.27-07.40.33:857][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.09.27-07.40.34:054][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.09.27-07.40.34:054][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.09.27-07.40.34:128][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.09.27-07.40.34:273][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.09.27-07.40.34:336][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.09.27-07.40.34:447][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.09.27-07.40.34:532][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.09.27-07.40.34:604][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.09.27-07.40.34:678][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.09.27-07.40.34:678][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.09.27-07.40.35:589][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.09.27-07.40.35:759][  0]LogDerivedDataCache: Loaded boot cache 0.17s 90MB C:/Users/Acer/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.09.27-07.40.35:759][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Acer/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.09.27-07.40.35:760][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.09.27-07.40.35:760][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.09.27-07.40.35:760][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.09.27-07.40.35:760][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.09.27-07.40.35:786][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.09.27-07.40.35:798][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Acer/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.09.27-07.40.35:818][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.09.27-07.40.35:819][  0]LogSlate: Using Freetype 2.6.0
+[2017.09.27-07.40.35:819][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.09.27-07.40.35:819][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.09.27-07.40.36:420][  0]LogInit: Selected Device Profile: [Windows]
+[2017.09.27-07.40.36:526][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.09.27-07.40.36:755][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.09.27-07.40.36:815][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.09.27-07.40.36:885][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.09.27-07.40.36:885][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.09.27-07.40.36:885][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.09.27-07.40.37:687][  0]LogNetVersion: MarbleRun , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 1154158384)
+[2017.09.27-07.40.37:763][  0]LogAssetRegistry: FAssetRegistry took 0.0257 seconds to start up
+[2017.09.27-07.40.37:854][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.052921 seconds
+[2017.09.27-07.40.37:861][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.09.27-07.40.37:861][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.09.27-07.40.37:861][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.09.27-07.40.37:956][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.09.27-07.40.41:762][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.09.27-07.40.41:827][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.09.27-07.40.42:713][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.09.27-07.40.43:257][  0]SourceControl: Info Source control is disabled
+[2017.09.27-07.40.43:299][  0]SourceControl: Info Source control is disabled
+[2017.09.27-07.40.43:396][  0]SourceControl: Info Source control is disabled
+[2017.09.27-07.40.43:477][  0]SourceControl: Info Source control is disabled
+[2017.09.27-07.40.44:679][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.09.27-07.40.45:733][  0]LogEngine: Initializing Engine...
+[2017.09.27-07.40.45:764][  0]LogHMD: Failed to initialize OpenVR with code 117
+[2017.09.27-07.40.46:076][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.09.27-07.40.46:076][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.09.27-07.40.46:309][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.09.27-07.40.46:330][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.27-07.40.46:362][  0]LogInit: FAudioDevice initialized.
+[2017.09.27-07.40.46:431][  0]LogDerivedDataCache: Saved boot cache 0.07s 90MB C:/Users/Acer/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.09.27-07.40.46:450][  0]LogInit: Texture streaming: Enabled
+[2017.09.27-07.40.46:610][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.09.27-07.40.47:018][  0]LogInit: Transaction tracking system initialized
+[2017.09.27-07.40.47:447][  0]BlueprintLog: New page: Editor Load
+[2017.09.27-07.40.49:033][  0]LocalizationService: Info Localization service is disabled
+[2017.09.27-07.40.50:147][  0]LogConsoleResponse:Display: 
+[2017.09.27-07.40.50:329][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.09.27-07.40.50:329][  0]LogCook:Display: Mobile HDR setting 1
+[2017.09.27-07.40.50:363][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Content/' took 0.02s
+[2017.09.27-07.40.51:714][  0]SourceControl: Info Source control is disabled
+[2017.09.27-07.40.51:714][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.09.27-07.40.51:715][  0]LightingResults: New page: Lighting Build
+[2017.09.27-07.40.51:769][  0]MapCheck: New page: Map Check
+[2017.09.27-07.40.51:769][  0]LightingResults: New page: Lighting Build
+[2017.09.27-07.40.54:971][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.09.27-07.40.54:985][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.09.27-07.40.55:034][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.09.27-07.40.55:124][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 89.454ms to complete.
+[2017.09.27-07.40.55:124][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 3.410
+[2017.09.27-07.40.55:337][  0]LogCollectionManager: Loaded 0 collections in 0.001613 seconds
+[2017.09.27-07.40.55:441][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Saved/Collections/' took 0.01s
+[2017.09.27-07.40.55:441][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Developers/Acer/Collections/' took 0.01s
+[2017.09.27-07.40.55:441][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Collections/' took 0.01s
+[2017.09.27-07.40.55:441][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.09.27-07.40.55:456][  0]LogContentBrowser: Native class hierarchy populated in 0.0154 seconds. Added 2331 classes and 494 folders.
+[2017.09.27-07.40.55:553][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2017.09.27-07.40.55:601][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.09.27-07.40.55:658][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.09.27-07.40.55:714][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.09.27-07.40.55:723][  0]LogSlate: Took 0.000351 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.09.27-07.40.55:727][  0]LogSlate: Took 0.000422 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.09.27-07.40.55:742][  0]LogSlate: Took 0.000271 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.09.27-07.40.55:890][  0]LogRenderer: Reallocating scene render targets to support 1368x588 NumSamples 1 (Frame:1).
+[2017.09.27-07.40.55:992][  0]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.09.27-07.40.56:120][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.09.27-07.40.56:203][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.09.27-07.40.56:204][  0]LogLoad: (Engine Initialization) Total time: 29.32 seconds
+[2017.09.27-07.40.56:204][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 1.16 seconds
+[2017.09.27-07.40.56:204][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.09.27-07.40.56:204][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.09.27-07.40.56:543][  0]LogOcInput: OculusInput pre-init called
+[2017.09.27-07.40.56:544][  0]LogRawInputWindows:Warning: Found device 0 devices
+[2017.09.27-07.40.56:544][  0]LogRawInputWindows:Warning: Found device 0 devices
+[2017.09.27-07.40.56:544][  0]LogRawInputWindows:Warning: Device was registered succesfully but not connected (Usage:4 UsagePage:1
+[2017.09.27-07.40.56:544][  0]LogRawInputWindows:Warning: Found device 1 devices
+[2017.09.27-07.40.56:544][  0]LogRawInputWindows:Warning: Device was registered succesfully but not connected (Usage:5 UsagePage:1
+[2017.09.27-07.40.56:544][  0]LogHMD: Starting GearVRController plugin
+[2017.09.27-07.40.56:594][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.09.27-07.40.56:876][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Content/' took 0.31s
+[2017.09.27-07.40.56:900][  1]LogAssetRegistry: Asset discovery search completed in 19.1584 seconds
+[2017.09.27-07.40.56:903][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.09.27-07.40.56:903][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000027 seconds (updated 0 objects)
+[2017.09.27-07.40.57:558][  3]LogSlate: Took 0.000243 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.09.27-07.40.57:888][  4]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.40.59:554][  9]LogBlueprintUserMessages: [BP_FloorFire3_C_0] BP_FloorFire3
+[2017.09.27-07.41.00:545][ 12]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.09.27-07.41.00:547][ 12]LogBlueprintUserMessages: [BP_FloorCurvedLeftSteepHard_C_0] BP_FloorCurvedLeftSteepHard
+[2017.09.27-07.42.17:666][777]LogSlate: Took 0.000460 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.09.27-07.42.18:259][777]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 112 classes and 0 folders.
+[2017.09.27-07.42.19:044][777]LogSlate: Took 0.000128 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.09.27-07.42.19:170][777]LogBlueprintUserMessages: [BP_Marble_C_1] Timer started
+[2017.09.27-07.42.19:177][777]LogSlate: Took 0.000216 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.09.27-07.42.19:361][778]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.09.27-07.43.19:793][406]BlueprintLog: New page: Compile BP_Marble
+[2017.09.27-07.43.20:176][406]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.43.20:178][406]LogBlueprintUserMessages: [BP_Marble_C_1] Timer started
+[2017.09.27-07.43.20:324][406]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.43.20:325][406]LogBlueprintUserMessages: [BP_Marble_C_1] Timer started
+[2017.09.27-07.43.20:405][406]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.43.20:407][406]LogBlueprintUserMessages: [BP_Marble_C_1] Timer started
+[2017.09.27-07.43.23:181][537]LogTemp: Repeting last play command: Selected Viewport
+[2017.09.27-07.43.23:272][537]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.09.27-07.43.23:273][537]PIE: New page: PIE session: VehicleAdvExampleMap (Sep 27, 2017, 11:43:23 AM)
+[2017.09.27-07.43.23:273][537]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.09.27-07.43.23:280][537]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006839s)
+[2017.09.27-07.43.23:280][537]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.09.27-07.43.23:281][537]LogPlayLevel: PIE: World Init took: (0.000881s)
+[2017.09.27-07.43.23:281][537]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.008002s)
+[2017.09.27-07.43.23:308][537]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.27-07.43.23:323][537]LogInit: FAudioDevice initialized.
+[2017.09.27-07.43.23:368][537]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.09.27-07.43.23:377][537]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.09.27-09.43.23
+[2017.09.27-07.43.23:378][537]LogWorld: Bringing up level for play took: 0.001274
+[2017.09.27-07.43.23:439][537]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 11 classes and 0 folders.
+[2017.09.27-07.43.23:440][537]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.43.23:443][537]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.43.23:445][537]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_0] 1
+[2017.09.27-07.43.23:446][537]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_0] BP_FloorRampCloudS
+[2017.09.27-07.43.23:448][537]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.43.23:448][537]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.43.23:449][537]LogBlueprintUserMessages: [BP_FloorCross_C_0] 1
+[2017.09.27-07.43.23:452][537]LogBlueprintUserMessages: [BP_FloorCross_C_0] BP_FloorCross
+[2017.09.27-07.43.23:452][537]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.43.23:455][537]LogBlueprintUserMessages: [BP_FloorSide_C_0] 1
+[2017.09.27-07.43.23:456][537]LogBlueprintUserMessages: [BP_FloorSide_C_0] BP_FloorSide
+[2017.09.27-07.43.23:456][537]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.43.23:456][537]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_1] Hello
+[2017.09.27-07.43.23:459][537]LogBlueprintUserMessages: [BP_FloorRampCloudM_C_0] 1
+[2017.09.27-07.43.23:460][537]LogBlueprintUserMessages: [BP_FloorRampCloudM_C_0] BP_FloorRampCloudM
+[2017.09.27-07.43.23:461][537]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_1] Hello
+[2017.09.27-07.43.23:462][537]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.43.23:463][537]LogBlueprintUserMessages: [BP_FloorCurvedLeft_C_0] BP_FloorCurvedLeft
+[2017.09.27-07.43.23:463][537]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.43.23:463][537]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_0 bensound-moose_Cue
+[2017.09.27-07.43.23:473][537]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.413
+[2017.09.27-07.43.26:801][730]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.43.26:801][730]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] playa
+[2017.09.27-07.43.26:817][731]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.43.26:817][731]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] playa
+[2017.09.27-07.43.33:769][146]LogBlueprintUserMessages: [BP_FloorMid_C_0] 1
+[2017.09.27-07.43.33:770][146]LogBlueprintUserMessages: [BP_FloorMid_C_0] BP_FloorMid
+[2017.09.27-07.43.33:770][146]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.43.34:756][205]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.43.39:073][462]LogBlueprintUserMessages: [BP_FloorMid_C_1] 1
+[2017.09.27-07.43.39:074][462]LogBlueprintUserMessages: [BP_FloorMid_C_1] BP_FloorMid1
+[2017.09.27-07.43.39:074][462]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.43.40:901][569]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_1 bensound-moose_Cue
+[2017.09.27-07.43.40:904][569]LogBlueprintUserMessages: [DESTROYED_BP_Ramp_C_CHILDACTOR_3] Hello
+[2017.09.27-07.44.06:439][499]BlueprintLog: New page: Compile BP_ChallengeManager
+[2017.09.27-07.44.06:633][499]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.44.06:634][499]LogBlueprintUserMessages: [BP_Marble_C_1] Timer started
+[2017.09.27-07.44.44:611][998]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_ChallengeManager" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_ChallengeManager.uasset" SILENT=true
+[2017.09.27-07.44.44:944][998]LogSavePackage: Save=229.90ms
+[2017.09.27-07.44.44:944][998]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/BP_ChallengeManagerA759E6484966D41DE9637EA1CCAE81FA.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_ChallengeManager.uasset'
+[2017.09.27-07.44.44:947][998]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_ChallengeManager.uasset
+[2017.09.27-07.45.03:995][898]BlueprintLog: New page: Compile BP_UpgradeManager
+[2017.09.27-07.45.08:512][103]LogTemp: Repeting last play command: Selected Viewport
+[2017.09.27-07.45.08:545][103]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.09.27-07.45.08:545][103]PIE: New page: PIE session: VehicleAdvExampleMap (Sep 27, 2017, 11:45:08 AM)
+[2017.09.27-07.45.08:545][103]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.09.27-07.45.08:551][103]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006397s)
+[2017.09.27-07.45.08:552][103]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.09.27-07.45.08:553][103]LogPlayLevel: PIE: World Init took: (0.001535s)
+[2017.09.27-07.45.08:554][103]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.008671s)
+[2017.09.27-07.45.08:589][103]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.27-07.45.08:601][103]LogInit: FAudioDevice initialized.
+[2017.09.27-07.45.08:641][103]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.09.27-07.45.08:649][103]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.09.27-09.45.08
+[2017.09.27-07.45.08:649][103]LogWorld: Bringing up level for play took: 0.001413
+[2017.09.27-07.45.08:651][103]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.45.08:658][103]LogBlueprintUserMessages: [BP_FloorMid_C_0] 1
+[2017.09.27-07.45.08:659][103]LogBlueprintUserMessages: [BP_FloorMid_C_0] BP_FloorMid
+[2017.09.27-07.45.08:659][103]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.08:660][103]LogBlueprintUserMessages: [BP_FloorCurvedLeftSteepHard_C_0] BP_FloorCurvedLeftSteepHard
+[2017.09.27-07.45.08:660][103]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.08:661][103]LogBlueprintUserMessages: [BP_FloorCross_C_0] 1
+[2017.09.27-07.45.08:661][103]LogBlueprintUserMessages: [BP_FloorCross_C_0] BP_FloorCross
+[2017.09.27-07.45.08:661][103]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.45.08:664][103]LogBlueprintUserMessages: [BP_FloorFire212_C_0] 1
+[2017.09.27-07.45.08:664][103]LogBlueprintUserMessages: [BP_FloorFire212_C_0] BP_FloorFire212
+[2017.09.27-07.45.08:665][103]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.45.08:665][103]LogBlueprintUserMessages: [BP_Floor0_C_0] 1
+[2017.09.27-07.45.08:666][103]LogBlueprintUserMessages: [BP_Floor0_C_0] BP_Floor0
+[2017.09.27-07.45.08:666][103]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.08:666][103]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_0 bensound-house_Cue
+[2017.09.27-07.45.08:675][103]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.385
+[2017.09.27-07.45.14:552][447]LogBlueprintUserMessages: [BP_FloorCurvedLeftSteepHard_C_1] BP_FloorCurvedLeftSteepHard1
+[2017.09.27-07.45.14:552][447]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.16:505][563]LogBlueprintUserMessages: [BP_FloorFire121_C_0] BP_FloorFire121
+[2017.09.27-07.45.16:506][563]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.45.23:592][862]LogBlueprintUserMessages: [BP_Floor0_C_1] 1
+[2017.09.27-07.45.23:592][862]LogBlueprintUserMessages: [BP_Floor0_C_1] BP_Floor01
+[2017.09.27-07.45.23:593][862]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.27:140][991]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.45.27:144][991]LogBlueprintUserMessages: [BP_FloorRampCloudM_C_0] 1
+[2017.09.27-07.45.27:145][991]LogBlueprintUserMessages: [BP_FloorRampCloudM_C_0] BP_FloorRampCloudM
+[2017.09.27-07.45.27:145][991]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.45.27:145][991]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.27:831][ 17]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_1] Hello
+[2017.09.27-07.45.27:833][ 17]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_0] 1
+[2017.09.27-07.45.27:834][ 17]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_0] BP_FloorRampCloudS
+[2017.09.27-07.45.27:834][ 17]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_1] Hello
+[2017.09.27-07.45.27:834][ 17]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.30:384][161]LogBlueprintUserMessages: [BP_FloorFire3_C_0] 1
+[2017.09.27-07.45.30:384][161]LogBlueprintUserMessages: [BP_FloorFire3_C_0] BP_FloorFire3
+[2017.09.27-07.45.30:385][161]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.45.34:705][360]LogBlueprintUserMessages: [BP_FloorFire212_C_1] 1
+[2017.09.27-07.45.34:705][360]LogBlueprintUserMessages: [BP_FloorFire212_C_1] BP_FloorFire2121
+[2017.09.27-07.45.34:706][360]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.35:418][392]LogBlueprintUserMessages: [BP_FloorSide_C_0] 1
+[2017.09.27-07.45.35:419][392]LogBlueprintUserMessages: [BP_FloorSide_C_0] BP_FloorSide
+[2017.09.27-07.45.35:419][392]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.45.36:990][467]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.45.36:990][467]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] playa
+[2017.09.27-07.45.37:007][468]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.45.37:007][468]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] playa
+[2017.09.27-07.45.44:861][870]LogBlueprintUserMessages: [BP_FloorSide_C_1] 1
+[2017.09.27-07.45.44:862][870]LogBlueprintUserMessages: [BP_FloorSide_C_1] BP_FloorSide1
+[2017.09.27-07.45.44:862][870]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.45:847][919]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.45.46:027][928]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_1] Hello
+[2017.09.27-07.45.46:027][928]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_1] playa
+[2017.09.27-07.45.46:048][929]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_1] Hello
+[2017.09.27-07.45.46:048][929]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_1] playa
+[2017.09.27-07.45.53:280][296]LogBlueprintUserMessages: [BP_FloorCurvedLeft_C_0] BP_FloorCurvedLeft
+[2017.09.27-07.45.53:280][296]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.45.54:272][342]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_1] Hello
+[2017.09.27-07.45.54:888][368]LogBlueprintUserMessages: [BP_FloorCurvedLeft_C_1] BP_FloorCurvedLeft1
+[2017.09.27-07.45.54:889][368]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.45.59:840][599]LogBlueprintUserMessages: [BP_FloorCross_C_1] BP_FloorCross1
+[2017.09.27-07.45.59:840][599]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.46.03:109][787]LogBlueprintUserMessages: [BP_FloorMid_C_1] 2
+[2017.09.27-07.46.03:109][787]LogBlueprintUserMessages: [BP_FloorMid_C_1] 2
+[2017.09.27-07.46.03:111][787]LogBlueprintUserMessages: [BP_FloorMid_C_1] BP_FloorMid1
+[2017.09.27-07.46.03:111][787]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.46.05:644][937]LogBlueprintUserMessages: [BP_FloorMid_C_2] 2
+[2017.09.27-07.46.05:644][937]LogBlueprintUserMessages: [BP_FloorMid_C_2] 2
+[2017.09.27-07.46.05:645][937]LogBlueprintUserMessages: [BP_FloorMid_C_2] BP_FloorMid2
+[2017.09.27-07.46.05:645][937]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.12:781][361]LogBlueprintUserMessages: [BP_Floor0_C_2] BP_Floor02
+[2017.09.27-07.46.12:781][361]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.19:507][764]LogBlueprintUserMessages: [BP_FloorFire212_C_2] 2
+[2017.09.27-07.46.19:507][764]LogBlueprintUserMessages: [BP_FloorFire212_C_2] 2
+[2017.09.27-07.46.19:508][764]LogBlueprintUserMessages: [BP_FloorFire212_C_2] BP_FloorFire2122
+[2017.09.27-07.46.19:508][764]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.24:740][ 75]LogBlueprintUserMessages: [BP_FloorFire212_C_3] BP_FloorFire2123
+[2017.09.27-07.46.24:740][ 75]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.46.27:415][196]LogBlueprintUserMessages: [BP_FloorCross_C_2] 2
+[2017.09.27-07.46.27:416][196]LogBlueprintUserMessages: [BP_FloorCross_C_2] 2
+[2017.09.27-07.46.27:417][196]LogBlueprintUserMessages: [BP_FloorCross_C_2] BP_FloorCross2
+[2017.09.27-07.46.27:417][196]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.46.29:998][301]LogBlueprintUserMessages: [BP_FloorCross_C_3] 2
+[2017.09.27-07.46.29:998][301]LogBlueprintUserMessages: [BP_FloorCross_C_3] 2
+[2017.09.27-07.46.30:000][301]LogBlueprintUserMessages: [BP_FloorCross_C_3] BP_FloorCross3
+[2017.09.27-07.46.30:000][301]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.46.30:001][301]LogBlueprintUserMessages: [BP_FloorCross_C_4] 2
+[2017.09.27-07.46.30:001][301]LogBlueprintUserMessages: [BP_FloorCross_C_4] 2
+[2017.09.27-07.46.30:001][301]LogBlueprintUserMessages: [BP_FloorCross_C_4] 2
+[2017.09.27-07.46.30:002][301]LogBlueprintUserMessages: [BP_FloorCross_C_4] BP_FloorCross4
+[2017.09.27-07.46.30:003][301]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.37:199][565]LogBlueprintUserMessages: [BP_FloorCurvedLeftSteepHard_C_2] BP_FloorCurvedLeftSteepHard2
+[2017.09.27-07.46.37:199][565]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.46.40:834][731]LogBlueprintUserMessages: [BP_FloorCurvedLeftSteepHard_C_3] BP_FloorCurvedLeftSteepHard3
+[2017.09.27-07.46.40:834][731]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.44:980][971]LogBlueprintUserMessages: [BP_FloorMid_C_3] 2
+[2017.09.27-07.46.44:980][971]LogBlueprintUserMessages: [BP_FloorMid_C_3] 2
+[2017.09.27-07.46.44:981][971]LogBlueprintUserMessages: [BP_FloorMid_C_3] BP_FloorMid3
+[2017.09.27-07.46.44:981][971]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.48:648][189]LogBlueprintUserMessages: [BP_Floor0_C_3] 2
+[2017.09.27-07.46.48:649][189]LogBlueprintUserMessages: [BP_Floor0_C_3] 2
+[2017.09.27-07.46.48:650][189]LogBlueprintUserMessages: [BP_Floor0_C_3] BP_Floor03
+[2017.09.27-07.46.48:650][189]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.52:418][414]LogBlueprintUserMessages: [BP_FloorCurvedLeftSteepHard_C_4] BP_FloorCurvedLeftSteepHard4
+[2017.09.27-07.46.52:418][414]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.53:649][487]LogBlueprintUserMessages: [BP_FloorFire121_C_1] 2
+[2017.09.27-07.46.53:649][487]LogBlueprintUserMessages: [BP_FloorFire121_C_1] 2
+[2017.09.27-07.46.53:649][487]LogBlueprintUserMessages: [BP_FloorFire121_C_1] 2
+[2017.09.27-07.46.53:649][487]LogBlueprintUserMessages: [BP_FloorFire121_C_1] 2
+[2017.09.27-07.46.53:651][487]LogBlueprintUserMessages: [BP_FloorFire121_C_1] BP_FloorFire1211
+[2017.09.27-07.46.53:651][487]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.55:338][586]LogBlueprintUserMessages: [BP_FloorFire212_C_4] 2
+[2017.09.27-07.46.55:338][586]LogBlueprintUserMessages: [BP_FloorFire212_C_4] 2
+[2017.09.27-07.46.55:340][586]LogBlueprintUserMessages: [BP_FloorFire212_C_4] BP_FloorFire2124
+[2017.09.27-07.46.55:340][586]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.59:436][765]LogBlueprintUserMessages: [BP_FloorMid_C_4] BP_FloorMid4
+[2017.09.27-07.46.59:436][765]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.46.59:437][765]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_4] Hello
+[2017.09.27-07.46.59:439][765]LogBlueprintUserMessages: [BP_FloorRampCloudM_C_1] 2
+[2017.09.27-07.46.59:439][765]LogBlueprintUserMessages: [BP_FloorRampCloudM_C_1] 2
+[2017.09.27-07.46.59:440][765]LogBlueprintUserMessages: [BP_FloorRampCloudM_C_1] BP_FloorRampCloudM1
+[2017.09.27-07.46.59:440][765]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_4] Hello
+[2017.09.27-07.46.59:440][765]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.01:744][859]LogBlueprintUserMessages: [BP_FloorMid_C_5] BP_FloorMid5
+[2017.09.27-07.47.01:744][859]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.47.05:408][993]LogBlueprintUserMessages: [BP_FloorFire212_C_5] 3
+[2017.09.27-07.47.05:408][993]LogBlueprintUserMessages: [BP_FloorFire212_C_5] 3
+[2017.09.27-07.47.05:408][993]LogBlueprintUserMessages: [BP_FloorFire212_C_5] 3
+[2017.09.27-07.47.05:408][993]LogBlueprintUserMessages: [BP_FloorFire212_C_5] 3
+[2017.09.27-07.47.05:410][993]LogBlueprintUserMessages: [BP_FloorFire212_C_5] BP_FloorFire2125
+[2017.09.27-07.47.05:410][993]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.08:977][119]LogBlueprintUserMessages: [BP_FloorCurvedLeftSteepHard_C_5] BP_FloorCurvedLeftSteepHard5
+[2017.09.27-07.47.08:977][119]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.11:861][266]LogBlueprintUserMessages: [BP_Floor0_C_4] 3
+[2017.09.27-07.47.11:862][266]LogBlueprintUserMessages: [BP_Floor0_C_4] 3
+[2017.09.27-07.47.11:863][266]LogBlueprintUserMessages: [BP_Floor0_C_4] BP_Floor04
+[2017.09.27-07.47.11:863][266]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.12:663][312]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_4] Hello
+[2017.09.27-07.47.12:663][312]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_4] playa
+[2017.09.27-07.47.12:679][313]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_4] Hello
+[2017.09.27-07.47.12:679][313]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_4] playa
+[2017.09.27-07.47.19:824][736]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_5] Hello
+[2017.09.27-07.47.19:827][736]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_1] 3
+[2017.09.27-07.47.19:827][736]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_1] 3
+[2017.09.27-07.47.19:827][736]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_1] 3
+[2017.09.27-07.47.19:827][736]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_1] 3
+[2017.09.27-07.47.19:832][736]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_1] BP_FloorRampCloudS1
+[2017.09.27-07.47.19:832][736]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_5] Hello
+[2017.09.27-07.47.19:832][736]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.20:808][792]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_4] Hello
+[2017.09.27-07.47.22:371][880]LogBlueprintUserMessages: [BP_FloorCross_C_5] 3
+[2017.09.27-07.47.22:371][880]LogBlueprintUserMessages: [BP_FloorCross_C_5] 3
+[2017.09.27-07.47.22:371][880]LogBlueprintUserMessages: [BP_FloorCross_C_5] 3
+[2017.09.27-07.47.22:374][880]LogBlueprintUserMessages: [BP_FloorCross_C_5] BP_FloorCross5
+[2017.09.27-07.47.22:374][880]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.47.25:360][ 33]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_7] Hello
+[2017.09.27-07.47.25:363][ 33]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_2] 3
+[2017.09.27-07.47.25:363][ 33]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_2] 3
+[2017.09.27-07.47.25:363][ 33]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_2] 3
+[2017.09.27-07.47.25:364][ 33]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_2] BP_FloorRampCloudS2
+[2017.09.27-07.47.25:364][ 33]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_7] Hello
+[2017.09.27-07.47.25:365][ 33]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.26:977][123]LogBlueprintUserMessages: [BP_FloorCross_C_6] 3
+[2017.09.27-07.47.26:977][123]LogBlueprintUserMessages: [BP_FloorCross_C_6] 3
+[2017.09.27-07.47.26:977][123]LogBlueprintUserMessages: [BP_FloorCross_C_6] 3
+[2017.09.27-07.47.26:980][123]LogBlueprintUserMessages: [BP_FloorCross_C_6] BP_FloorCross6
+[2017.09.27-07.47.26:980][123]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.27:148][132]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_1 bensound-moose_Cue
+[2017.09.27-07.47.27:149][132]LogBlueprintUserMessages: [DESTROYED_BP_Ramp_C_CHILDACTOR_8] Hello
+[2017.09.27-07.47.27:155][132]LogBlueprintUserMessages: [DESTROYED_BP_Ramp_C_CHILDACTOR_9] Hello
+[2017.09.27-07.47.32:559][380]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_UpgradeManager" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_UpgradeManager.uasset" SILENT=true
+[2017.09.27-07.47.32:797][380]LogSavePackage: Save=131.24ms
+[2017.09.27-07.47.32:797][380]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/BP_UpgradeManager591C0DF144B8E93E3D264C8A4A87655F.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_UpgradeManager.uasset'
+[2017.09.27-07.47.32:800][380]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_UpgradeManager.uasset
+[2017.09.27-07.47.33:383][408]BlueprintLog: New page: Compile BP_UpgradeManager
+[2017.09.27-07.47.37:615][618]LogTemp: Repeting last play command: Selected Viewport
+[2017.09.27-07.47.37:649][618]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.09.27-07.47.37:649][618]PIE: New page: PIE session: VehicleAdvExampleMap (Sep 27, 2017, 11:47:37 AM)
+[2017.09.27-07.47.37:649][618]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.09.27-07.47.37:655][618]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005753s)
+[2017.09.27-07.47.37:656][618]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.09.27-07.47.37:656][618]LogPlayLevel: PIE: World Init took: (0.000700s)
+[2017.09.27-07.47.37:656][618]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.006718s)
+[2017.09.27-07.47.37:686][618]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.27-07.47.37:701][618]LogInit: FAudioDevice initialized.
+[2017.09.27-07.47.37:739][618]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.09.27-07.47.37:747][618]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.09.27-09.47.37
+[2017.09.27-07.47.37:748][618]LogWorld: Bringing up level for play took: 0.001291
+[2017.09.27-07.47.37:749][618]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.47.37:752][618]LogBlueprintUserMessages: [BP_Floor0_C_0] 1
+[2017.09.27-07.47.37:752][618]LogBlueprintUserMessages: [BP_Floor0_C_0] BP_Floor0
+[2017.09.27-07.47.37:753][618]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.47.37:756][618]LogBlueprintUserMessages: [BP_FloorFire121_C_0] BP_FloorFire121
+[2017.09.27-07.47.37:757][618]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.47.37:759][618]LogBlueprintUserMessages: [BP_FloorFire3_C_0] 1
+[2017.09.27-07.47.37:761][618]LogBlueprintUserMessages: [BP_FloorFire3_C_0] BP_FloorFire3
+[2017.09.27-07.47.37:762][618]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.47.37:763][618]LogBlueprintUserMessages: [BP_FloorCross_C_0] 1
+[2017.09.27-07.47.37:764][618]LogBlueprintUserMessages: [BP_FloorCross_C_0] BP_FloorCross
+[2017.09.27-07.47.37:764][618]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.37:767][618]LogBlueprintUserMessages: [BP_FloorFire121_C_1] 1
+[2017.09.27-07.47.37:768][618]LogBlueprintUserMessages: [BP_FloorFire121_C_1] BP_FloorFire1211
+[2017.09.27-07.47.37:768][618]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.37:768][618]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_0 bensound-dance_Cue
+[2017.09.27-07.47.37:773][618]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.713
+[2017.09.27-07.47.38:625][662]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_1 bensound-dance_Cue
+[2017.09.27-07.47.53:928][399]BlueprintLog: New page: Compile BP_ChallengeManager
+[2017.09.27-07.47.54:131][399]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.47.54:132][399]LogBlueprintUserMessages: [BP_Marble_C_1] Timer started
+[2017.09.27-07.47.56:263][504]LogTemp: Repeting last play command: Selected Viewport
+[2017.09.27-07.47.56:298][504]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.09.27-07.47.56:298][504]PIE: New page: PIE session: VehicleAdvExampleMap (Sep 27, 2017, 11:47:56 AM)
+[2017.09.27-07.47.56:298][504]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.09.27-07.47.56:303][504]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005295s)
+[2017.09.27-07.47.56:304][504]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.09.27-07.47.56:304][504]LogPlayLevel: PIE: World Init took: (0.000656s)
+[2017.09.27-07.47.56:304][504]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.006199s)
+[2017.09.27-07.47.56:334][504]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.27-07.47.56:349][504]LogInit: FAudioDevice initialized.
+[2017.09.27-07.47.56:386][504]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.09.27-07.47.56:395][504]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.09.27-09.47.56
+[2017.09.27-07.47.56:395][504]LogWorld: Bringing up level for play took: 0.002563
+[2017.09.27-07.47.56:397][504]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.47.56:400][504]LogBlueprintUserMessages: [BP_Floor0_C_0] 1
+[2017.09.27-07.47.56:400][504]LogBlueprintUserMessages: [BP_Floor0_C_0] BP_Floor0
+[2017.09.27-07.47.56:400][504]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.56:403][504]LogBlueprintUserMessages: [BP_FloorFire121_C_0] 1
+[2017.09.27-07.47.56:403][504]LogBlueprintUserMessages: [BP_FloorFire121_C_0] BP_FloorFire121
+[2017.09.27-07.47.56:404][504]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.47.56:404][504]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.09.27-07.47.56:404][504]LogBlueprintUserMessages: [BP_FloorCurvedLeftSteepHard_C_0] BP_FloorCurvedLeftSteepHard
+[2017.09.27-07.47.56:405][504]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.47.56:405][504]LogBlueprintUserMessages: [BP_Floor0_C_1] 1
+[2017.09.27-07.47.56:406][504]LogBlueprintUserMessages: [BP_Floor0_C_1] BP_Floor01
+[2017.09.27-07.47.56:406][504]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.47.56:407][504]LogBlueprintUserMessages: [BP_FloorCross_C_0] 1
+[2017.09.27-07.47.56:407][504]LogBlueprintUserMessages: [BP_FloorCross_C_0] BP_FloorCross
+[2017.09.27-07.47.56:407][504]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.47.56:407][504]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_0 bensound-dubstep_Cue
+[2017.09.27-07.47.56:415][504]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.645
+[2017.09.27-07.47.58:253][610]LogBlueprintUserMessages: [BP_FloorCurvedLeft_C_0] BP_FloorCurvedLeft
+[2017.09.27-07.47.58:253][610]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.04:811][953]LogBlueprintUserMessages: [BP_FloorFire212_C_0] 1
+[2017.09.27-07.48.04:812][953]LogBlueprintUserMessages: [BP_FloorFire212_C_0] BP_FloorFire212
+[2017.09.27-07.48.04:812][953]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.48.07:894][122]LogBlueprintUserMessages: [BP_FloorMid_C_0] 1
+[2017.09.27-07.48.07:895][122]LogBlueprintUserMessages: [BP_FloorMid_C_0] BP_FloorMid
+[2017.09.27-07.48.07:895][122]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.08:699][169]LogBlueprintUserMessages: [BP_FloorSide_C_0] 1
+[2017.09.27-07.48.08:700][169]LogBlueprintUserMessages: [BP_FloorSide_C_0] BP_FloorSide
+[2017.09.27-07.48.08:700][169]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.11:383][326]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_1 bensound-house_Cue
+[2017.09.27-07.48.12:715][398]LogTemp: Repeting last play command: Selected Viewport
+[2017.09.27-07.48.12:751][398]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.09.27-07.48.12:751][398]PIE: New page: PIE session: VehicleAdvExampleMap (Sep 27, 2017, 11:48:12 AM)
+[2017.09.27-07.48.12:751][398]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.09.27-07.48.12:761][398]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009779s)
+[2017.09.27-07.48.12:761][398]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.09.27-07.48.12:762][398]LogPlayLevel: PIE: World Init took: (0.000955s)
+[2017.09.27-07.48.12:762][398]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.011098s)
+[2017.09.27-07.48.12:796][398]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.27-07.48.12:813][398]LogInit: FAudioDevice initialized.
+[2017.09.27-07.48.12:854][398]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.09.27-07.48.12:862][398]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.09.27-09.48.12
+[2017.09.27-07.48.12:862][398]LogWorld: Bringing up level for play took: 0.001086
+[2017.09.27-07.48.12:863][398]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.09.27-07.48.12:866][398]LogBlueprintUserMessages: [BP_FloorCross_C_0] 1
+[2017.09.27-07.48.12:867][398]LogBlueprintUserMessages: [BP_FloorCross_C_0] BP_FloorCross
+[2017.09.27-07.48.12:867][398]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.12:868][398]LogBlueprintUserMessages: [BP_Floor0_C_0] 1
+[2017.09.27-07.48.12:868][398]LogBlueprintUserMessages: [BP_Floor0_C_0] BP_Floor0
+[2017.09.27-07.48.12:869][398]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.48.12:872][398]LogBlueprintUserMessages: [BP_FloorFire212_C_0] 1
+[2017.09.27-07.48.12:875][398]LogBlueprintUserMessages: [BP_FloorFire212_C_0] BP_FloorFire212
+[2017.09.27-07.48.12:875][398]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.12:877][398]LogBlueprintUserMessages: [BP_FloorCross_C_1] 1
+[2017.09.27-07.48.12:878][398]LogBlueprintUserMessages: [BP_FloorCross_C_1] BP_FloorCross1
+[2017.09.27-07.48.12:878][398]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.12:879][398]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.48.12:881][398]LogBlueprintUserMessages: [BP_FloorRampCloudM_C_0] 1
+[2017.09.27-07.48.12:882][398]LogBlueprintUserMessages: [BP_FloorRampCloudM_C_0] BP_FloorRampCloudM
+[2017.09.27-07.48.12:882][398]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.48.12:882][398]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.12:882][398]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_0 bensound-moose_Cue
+[2017.09.27-07.48.12:888][398]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.173
+[2017.09.27-07.48.20:143][820]LogBlueprintUserMessages: [BP_FloorSide_C_0] 1
+[2017.09.27-07.48.20:144][820]LogBlueprintUserMessages: [BP_FloorSide_C_0] BP_FloorSide
+[2017.09.27-07.48.20:145][820]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.48.20:148][820]LogBlueprintUserMessages: [BP_FloorCurvedLeft_C_0] BP_FloorCurvedLeft
+[2017.09.27-07.48.20:149][820]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.24:561][ 41]LogBlueprintUserMessages: [BP_FloorFire212_C_1] 1
+[2017.09.27-07.48.24:562][ 41]LogBlueprintUserMessages: [BP_FloorFire212_C_1] BP_FloorFire2121
+[2017.09.27-07.48.24:562][ 41]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.48.29:478][313]LogBlueprintUserMessages: [BP_Floor0_C_1] 1
+[2017.09.27-07.48.29:479][313]LogBlueprintUserMessages: [BP_Floor0_C_1] BP_Floor01
+[2017.09.27-07.48.29:479][313]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.30:417][366]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.48.30:418][366]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] playa
+[2017.09.27-07.48.30:434][367]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.48.30:434][367]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] playa
+[2017.09.27-07.48.39:520][886]LogBlueprintUserMessages: [BP_FloorFire212_C_2] 1
+[2017.09.27-07.48.39:521][886]LogBlueprintUserMessages: [BP_FloorFire212_C_2] BP_FloorFire2122
+[2017.09.27-07.48.39:521][886]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.40:499][937]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_0] Hello
+[2017.09.27-07.48.42:755][ 28]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_2] Hello
+[2017.09.27-07.48.42:759][ 28]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_0] 1
+[2017.09.27-07.48.42:759][ 28]LogBlueprintUserMessages: [BP_FloorRampCloudS_C_0] BP_FloorRampCloudS
+[2017.09.27-07.48.42:759][ 28]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_2] Hello
+[2017.09.27-07.48.42:760][ 28]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.48:105][240]LogBlueprintUserMessages: [BP_Floor0_C_2] 1
+[2017.09.27-07.48.48:106][240]LogBlueprintUserMessages: [BP_Floor0_C_2] BP_Floor02
+[2017.09.27-07.48.48:107][240]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.48.52:775][408]LogBlueprintUserMessages: [BP_Floor0_C_3] 1
+[2017.09.27-07.48.52:776][408]LogBlueprintUserMessages: [BP_Floor0_C_3] BP_Floor03
+[2017.09.27-07.48.52:776][408]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.48.53:479][433]LogBlueprintUserMessages: [BP_Floor0_C_4] 2
+[2017.09.27-07.48.53:479][433]LogBlueprintUserMessages: [BP_Floor0_C_4] 2
+[2017.09.27-07.48.53:479][433]LogBlueprintUserMessages: [BP_Floor0_C_4] 2
+[2017.09.27-07.48.53:479][433]LogBlueprintUserMessages: [BP_Floor0_C_4] 2
+[2017.09.27-07.48.53:481][433]LogBlueprintUserMessages: [BP_Floor0_C_4] BP_Floor04
+[2017.09.27-07.48.53:481][433]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.48.57:615][632]LogBlueprintUserMessages: [BP_FloorCurvedLeftSteepHard_C_0] BP_FloorCurvedLeftSteepHard
+[2017.09.27-07.48.57:615][632]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.48.59:186][717]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_2] Hello
+[2017.09.27-07.48.59:186][717]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_2] playa
+[2017.09.27-07.48.59:202][718]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_2] Hello
+[2017.09.27-07.48.59:202][718]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_2] playa
+[2017.09.27-07.49.06:616][160]LogBlueprintUserMessages: [BP_FloorSide_C_1] 2
+[2017.09.27-07.49.06:616][160]LogBlueprintUserMessages: [BP_FloorSide_C_1] 2
+[2017.09.27-07.49.06:620][160]LogBlueprintUserMessages: [BP_FloorSide_C_1] BP_FloorSide1
+[2017.09.27-07.49.06:620][160]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.49.06:939][179]LogBlueprintUserMessages: [BP_Floor0_C_5] 2
+[2017.09.27-07.49.06:939][179]LogBlueprintUserMessages: [BP_Floor0_C_5] 2
+[2017.09.27-07.49.06:942][179]LogBlueprintUserMessages: [BP_Floor0_C_5] BP_Floor05
+[2017.09.27-07.49.06:943][179]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.49.07:595][218]LogBlueprintUserMessages: [BP_Floor0_C_6] 2
+[2017.09.27-07.49.07:595][218]LogBlueprintUserMessages: [BP_Floor0_C_6] 2
+[2017.09.27-07.49.07:596][218]LogBlueprintUserMessages: [BP_Floor0_C_6] BP_Floor06
+[2017.09.27-07.49.07:597][218]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.49.07:614][219]LogBlueprintUserMessages: [Ramp_GEN_VARIABLE_BP_Ramp_C_CAT_2] Hello
+[2017.09.27-07.49.08:243][256]LogBlueprintUserMessages: [BP_FloorCross_C_2] 2
+[2017.09.27-07.49.08:243][256]LogBlueprintUserMessages: [BP_FloorCross_C_2] 2
+[2017.09.27-07.49.08:244][256]LogBlueprintUserMessages: [BP_FloorCross_C_2] BP_FloorCross2
+[2017.09.27-07.49.08:244][256]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=-1.000 Z=1.000
+[2017.09.27-07.49.10:678][401]LogBlueprintUserMessages: [BP_FloorMid_C_0] 2
+[2017.09.27-07.49.10:678][401]LogBlueprintUserMessages: [BP_FloorMid_C_0] 2
+[2017.09.27-07.49.10:680][401]LogBlueprintUserMessages: [BP_FloorMid_C_0] BP_FloorMid
+[2017.09.27-07.49.10:680][401]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] X=1.000 Y=1.000 Z=1.000
+[2017.09.27-07.49.13:437][563]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] WorldSettings_1.AudioComponent_1 bensound-moose_Cue
+[2017.09.27-07.49.16:845][735]LogSavePackage: Save=65.86ms
+[2017.09.27-07.49.16:845][735]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/VehicleAdvExampleMap6FD9A145426CEF6A75C685AC73A0938C.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap'
+[2017.09.27-07.49.16:849][735]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
+[2017.09.27-07.49.16:906][735]LogFileHelpers: Saving map 'VehicleAdvExampleMap' took 0.326
+[2017.09.27-07.49.16:913][735]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_ChallengeManager" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_ChallengeManager.uasset" SILENT=true
+[2017.09.27-07.49.17:253][735]LogSavePackage: Save=248.43ms
+[2017.09.27-07.49.17:253][735]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/BP_ChallengeManagerEA0D65414E8CE565C5FAFA8833BC125F.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_ChallengeManager.uasset'
+[2017.09.27-07.49.17:256][735]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_ChallengeManager.uasset
+[2017.09.27-07.49.17:287][735]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Marble" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Marble.uasset" SILENT=true
+[2017.09.27-07.49.17:685][735]LogSavePackage: Save=301.77ms
+[2017.09.27-07.49.17:685][735]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/BP_MarbleEC73439441B2E0530D1026B6580EE33B.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Marble.uasset'
+[2017.09.27-07.49.17:688][735]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Marble.uasset
+[2017.09.27-07.49.21:449][903]LogBlueprintUserMessages: [BP_Marble_C_1] Timer started
+[2017.09.27-07.49.21:484][904]LogRenderer: Reallocating scene render targets to support 1368x772 NumSamples 1 (Frame:1).

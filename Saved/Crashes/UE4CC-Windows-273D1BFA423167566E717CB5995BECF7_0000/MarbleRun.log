@@ -1,0 +1,1660 @@
+﻿Log file open, 08/04/17 14:43:54
+LogInit:Display: Running engine for game: MarbleRun
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1663686846) SRandInit(1663686846).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.101360
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3514769
+LogInit: Engine Version: 4.16.2-3514769+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jun 29 2017 02:03:24
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.08.04-12.43.55:323][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.04-12.43.55:323][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.08.04-12.43.55:341][  0]LogInit: Computer: LAPTOP-82FNG628
+[2017.08.04-12.43.55:341][  0]LogInit: User: Acer
+[2017.08.04-12.43.55:341][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.08.04-12.43.55:341][  0]LogInit: High frequency timer resolution =2.531249 MHz
+[2017.08.04-12.43.55:341][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2017.08.04-12.43.55:341][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.04-12.43.55:341][  0]LogMemory: Process Physical Memory: 273.07 MB used, 273.07 MB peak
+[2017.08.04-12.43.55:341][  0]LogMemory: Process Virtual Memory: 261.07 MB used, 261.07 MB peak
+[2017.08.04-12.43.55:341][  0]LogMemory: Physical Memory: 10363.59 MB used,  5850.57 MB free, 16214.16 MB total
+[2017.08.04-12.43.55:341][  0]LogMemory: Virtual Memory: 648.79 MB used,  5850.57 MB free, 134217728.00 MB total
+[2017.08.04-12.43.55:440][  0]LogInit: Using OS detected language (en-US).
+[2017.08.04-12.43.55:440][  0]LogInit: Using OS detected locale (en-US).
+[2017.08.04-12.43.55:443][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.08.04-12.43.56:514][  0]LogD3D11RHI: D3D11 adapters:
+[2017.08.04-12.43.56:543][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
+[2017.08.04-12.43.56:543][  0]LogD3D11RHI:       4064/0/8107 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.08.04-12.43.56:550][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2017.08.04-12.43.56:550][  0]LogD3D11RHI:       128/0/8107 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.08.04-12.43.56:552][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.08.04-12.43.56:552][  0]LogD3D11RHI:       0/0/8107 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.08.04-12.43.56:552][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.08.04-12.43.56:559][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.08.04-12.43.56:559][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
+[2017.08.04-12.43.56:559][  0]LogWindows: EnumDisplayDevices:
+[2017.08.04-12.43.56:559][  0]LogWindows:    0. 'Intel(R) HD Graphics 530' (P:1 D:1)
+[2017.08.04-12.43.56:559][  0]LogWindows:    1. 'Intel(R) HD Graphics 530' (P:0 D:1)
+[2017.08.04-12.43.56:559][  0]LogWindows:    2. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.08.04-12.43.56:559][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.08.04-12.43.56:559][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
+[2017.08.04-12.43.56:559][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.08.04-12.43.56:559][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.08.04-12.43.56:559][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.08.04-12.43.56:578][  0]LogD3D11RHI: Async texture creation enabled
+[2017.08.04-12.43.56:590][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.08.04-12.43.56:592][  0]LogShaderCompilers: Guid format shader working directory is -15 characters bigger than the processId version (../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Intermediate/Shaders/WorkingDirectory/16144/).
+[2017.08.04-12.43.56:593][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Acer/AppData/Local/Temp/UnrealShaderWorkingDir/B5DAFE2F4ED7D8D1A2D28484473B3B6F/'.
+[2017.08.04-12.43.56:593][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.08.04-12.43.57:753][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.08.04-12.43.57:810][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.08.04-12.43.57:869][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.08.04-12.43.57:930][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.08.04-12.43.57:987][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.08.04-12.43.58:065][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.08.04-12.43.58:131][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.08.04-12.43.58:198][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.08.04-12.43.58:261][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.08.04-12.43.58:321][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.08.04-12.43.58:389][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.08.04-12.43.58:452][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.08.04-12.43.58:518][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.08.04-12.43.58:585][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.08.04-12.43.58:651][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.08.04-12.43.58:787][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.08.04-12.43.58:787][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.08.04-12.43.58:840][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.08.04-12.43.58:965][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.08.04-12.43.58:999][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.08.04-12.43.59:056][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.08.04-12.43.59:111][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.08.04-12.43.59:165][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.08.04-12.43.59:224][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.08.04-12.43.59:224][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.08.04-12.43.59:806][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.08.04-12.43.59:914][  0]LogDerivedDataCache: Loaded boot cache 0.11s 90MB C:/Users/Acer/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.04-12.43.59:914][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Acer/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.08.04-12.43.59:914][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.08.04-12.43.59:914][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.08.04-12.43.59:914][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.08.04-12.43.59:914][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.08.04-12.43.59:933][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.08.04-12.43.59:946][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Acer/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.08.04-12.43.59:956][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.08.04-12.43.59:957][  0]LogSlate: Using Freetype 2.6.0
+[2017.08.04-12.43.59:958][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.04-12.43.59:958][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.04-12.44.00:315][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.04-12.44.00:407][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.08.04-12.44.00:611][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.08.04-12.44.00:667][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.08.04-12.44.00:734][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.08.04-12.44.00:734][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.08.04-12.44.00:734][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.08.04-12.44.01:390][  0]LogNetVersion: MarbleRun , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 1154158384)
+[2017.08.04-12.44.01:457][  0]LogAssetRegistry: FAssetRegistry took 0.0260 seconds to start up
+[2017.08.04-12.44.01:543][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.059018 seconds
+[2017.08.04-12.44.01:551][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.08.04-12.44.01:551][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.08.04-12.44.01:551][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.08.04-12.44.01:638][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.08.04-12.44.04:367][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.08.04-12.44.04:409][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.08.04-12.44.05:007][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.08.04-12.44.05:461][  0]SourceControl: Info Source control is disabled
+[2017.08.04-12.44.05:494][  0]SourceControl: Info Source control is disabled
+[2017.08.04-12.44.05:546][  0]SourceControl: Info Source control is disabled
+[2017.08.04-12.44.05:599][  0]SourceControl: Info Source control is disabled
+[2017.08.04-12.44.06:440][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.08.04-12.44.07:166][  0]LogEngine: Initializing Engine...
+[2017.08.04-12.44.12:355][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2017.08.04-12.44.12:605][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.08.04-12.44.12:605][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.08.04-12.44.12:771][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.08.04-12.44.12:784][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-12.44.13:380][  0]LogInit: FAudioDevice initialized.
+[2017.08.04-12.44.13:429][  0]LogDerivedDataCache: Saved boot cache 0.05s 90MB C:/Users/Acer/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.04-12.44.13:446][  0]LogInit: Texture streaming: Enabled
+[2017.08.04-12.44.13:585][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.08.04-12.44.13:893][  0]LogInit: Transaction tracking system initialized
+[2017.08.04-12.44.14:347][  0]BlueprintLog: New page: Editor Load
+[2017.08.04-12.44.15:553][  0]LocalizationService: Info Localization service is disabled
+[2017.08.04-12.44.16:438][  0]LogConsoleResponse:Display: 
+[2017.08.04-12.44.16:672][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.08.04-12.44.16:672][  0]LogCook:Display: Mobile HDR setting 1
+[2017.08.04-12.44.17:349][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Content/' took 0.02s
+[2017.08.04-12.44.17:882][  0]SourceControl: Info Source control is disabled
+[2017.08.04-12.44.17:882][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.08.04-12.44.17:890][  0]LightingResults: New page: Lighting Build
+[2017.08.04-12.44.17:941][  0]MapCheck: New page: Map Check
+[2017.08.04-12.44.17:941][  0]LightingResults: New page: Lighting Build
+[2017.08.04-12.44.19:903][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-12.44.19:923][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.08.04-12.44.19:945][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.08.04-12.44.20:006][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 60.085ms to complete.
+[2017.08.04-12.44.20:006][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 2.124
+[2017.08.04-12.44.20:248][  0]LogCollectionManager: Loaded 0 collections in 0.001594 seconds
+[2017.08.04-12.44.20:365][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Saved/Collections/' took 0.01s
+[2017.08.04-12.44.20:365][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Developers/Acer/Collections/' took 0.01s
+[2017.08.04-12.44.20:365][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Collections/' took 0.01s
+[2017.08.04-12.44.20:365][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.08.04-12.44.20:381][  0]LogContentBrowser: Native class hierarchy populated in 0.0131 seconds. Added 2331 classes and 494 folders.
+[2017.08.04-12.44.20:466][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2017.08.04-12.44.20:933][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2017.08.04-12.44.20:997][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.08.04-12.44.21:119][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.08.04-12.44.21:131][  0]LogSlate: Took 0.000260 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.08.04-12.44.21:134][  0]LogSlate: Took 0.000200 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.08.04-12.44.21:157][  0]LogSlate: Took 0.011832 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.08.04-12.44.21:350][  0]LogRenderer: Reallocating scene render targets to support 1024x408 NumSamples 1 (Frame:1).
+[2017.08.04-12.44.21:469][  0]LogSlate: Took 0.006191 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.04-12.44.21:600][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.08.04-12.44.21:675][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.08.04-12.44.21:675][  0]LogLoad: (Engine Initialization) Total time: 28.42 seconds
+[2017.08.04-12.44.21:675][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.43 seconds
+[2017.08.04-12.44.21:675][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.08.04-12.44.21:675][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.08.04-12.44.22:015][  0]LogOcInput: OculusInput pre-init called
+[2017.08.04-12.44.22:015][  0]LogRawInputWindows:Warning: Found device 0 devices
+[2017.08.04-12.44.22:015][  0]LogRawInputWindows:Warning: Found device 0 devices
+[2017.08.04-12.44.22:015][  0]LogRawInputWindows:Warning: Device was registered succesfully but not connected (Usage:4 UsagePage:1
+[2017.08.04-12.44.22:015][  0]LogRawInputWindows:Warning: Found device 1 devices
+[2017.08.04-12.44.22:015][  0]LogRawInputWindows:Warning: Device was registered succesfully but not connected (Usage:5 UsagePage:1
+[2017.08.04-12.44.22:015][  0]LogHMD: Starting GearVRController plugin
+[2017.08.04-12.44.22:058][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.08.04-12.44.22:375][  1]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-12.44.22:384][  1]LogAssetRegistry: Asset discovery search completed in 20.9501 seconds
+[2017.08.04-12.44.22:386][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.08.04-12.44.22:386][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000033 seconds (updated 0 objects)
+[2017.08.04-12.44.27:683][ 17]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/Acer/Documents/Middleware/MarbleRun/Content/' took 5.65s
+[2017.08.04-12.44.43:060][120]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-12.44.43:133][120]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-12.44.43:134][120]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 4:44:43 PM)
+[2017.08.04-12.44.43:134][120]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-12.44.43:143][120]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008744s)
+[2017.08.04-12.44.43:144][120]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-12.44.43:144][120]LogPlayLevel: PIE: World Init took: (0.001239s)
+[2017.08.04-12.44.43:144][120]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.010210s)
+[2017.08.04-12.44.43:159][120]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-12.44.43:171][120]LogInit: FAudioDevice initialized.
+[2017.08.04-12.44.43:219][120]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-12.44.43:229][120]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-14.44.43
+[2017.08.04-12.44.43:230][120]LogWorld: Bringing up level for play took: 0.001508
+[2017.08.04-12.44.43:282][120]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2017.08.04-12.44.43:283][120]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-12.44.43:307][120]LogBlueprintUserMessages: [BP_ChallengeManager_52] 1
+[2017.08.04-12.44.43:314][120]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.815
+[2017.08.04-12.46.26:686][  4]LogBlueprintUserMessages: [BP_ChallengeManager_52] 2
+[2017.08.04-12.47.32:163][368]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-12.47.32:187][368]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-12.47.32:187][368]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 4:47:32 PM)
+[2017.08.04-12.47.32:187][368]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-12.47.32:194][368]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006450s)
+[2017.08.04-12.47.32:194][368]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-12.47.32:195][368]LogPlayLevel: PIE: World Init took: (0.000668s)
+[2017.08.04-12.47.32:195][368]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.007389s)
+[2017.08.04-12.47.32:210][368]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-12.47.32:222][368]LogInit: FAudioDevice initialized.
+[2017.08.04-12.47.32:257][368]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-12.47.32:263][368]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-14.47.32
+[2017.08.04-12.47.32:263][368]LogWorld: Bringing up level for play took: 0.001098
+[2017.08.04-12.47.32:264][368]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-12.47.32:277][368]LogBlueprintUserMessages: [BP_ChallengeManager_52] 0
+[2017.08.04-12.47.32:279][368]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.15
+[2017.08.04-12.48.06:747][763]LogSlate: Took 0.000153 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.04-12.48.07:324][763]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0012 seconds. Added 112 classes and 0 folders.
+[2017.08.04-12.48.08:009][763]LogSlate: Took 0.000175 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.08.04-12.48.08:159][763]LogSlate: Took 0.005193 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.08.04-12.48.08:527][764]LogSlate: Took 0.005220 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.08.04-12.56.51:513][766]LogSlate: Took 0.000122 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.04-12.59.06:247][811]LogEditorTransaction: Undo Mouse Drag
+[2017.08.04-12.59.39:172][634]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-12.59.39:213][634]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.08.04-12.59.39:213][634]LogPlayLevel: [PlayLevel] Compiling UI_Challenge before play...
+[2017.08.04-12.59.39:436][634]LogPlayLevel: PlayLevel: Blueprint regeneration took 223 ms (1 blueprints)
+[2017.08.04-12.59.39:436][634]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 4:59:39 PM)
+[2017.08.04-12.59.39:436][634]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-12.59.39:443][634]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006696s)
+[2017.08.04-12.59.39:444][634]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-12.59.39:444][634]LogPlayLevel: PIE: World Init took: (0.000712s)
+[2017.08.04-12.59.39:444][634]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.007602s)
+[2017.08.04-12.59.39:466][634]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-12.59.39:476][634]LogInit: FAudioDevice initialized.
+[2017.08.04-12.59.39:506][634]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-12.59.39:512][634]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-14.59.39
+[2017.08.04-12.59.39:513][634]LogWorld: Bringing up level for play took: 0.001062
+[2017.08.04-12.59.39:514][634]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-12.59.39:528][634]LogBlueprintUserMessages: [BP_ChallengeManager_52] 0
+[2017.08.04-12.59.39:531][634]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.598
+[2017.08.04-12.59.42:327][793]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-12.59.42:352][793]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-12.59.42:352][793]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 4:59:42 PM)
+[2017.08.04-12.59.42:352][793]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-12.59.42:359][793]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006414s)
+[2017.08.04-12.59.42:359][793]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-12.59.42:359][793]LogPlayLevel: PIE: World Init took: (0.000800s)
+[2017.08.04-12.59.42:360][793]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.007475s)
+[2017.08.04-12.59.42:384][793]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-12.59.42:395][793]LogInit: FAudioDevice initialized.
+[2017.08.04-12.59.42:432][793]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-12.59.42:439][793]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-14.59.42
+[2017.08.04-12.59.42:439][793]LogWorld: Bringing up level for play took: 0.001237
+[2017.08.04-12.59.42:440][793]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-12.59.42:453][793]LogBlueprintUserMessages: [BP_ChallengeManager_52] 2
+[2017.08.04-12.59.42:455][793]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.326
+[2017.08.04-13.00.38:127][512]LogSavePackage: Save=62.31ms
+[2017.08.04-13.00.38:127][512]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/VehicleAdvExampleMap_Auto14388B08B483654270533CA8B5A032146.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto1.umap'
+[2017.08.04-13.00.38:130][512]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto1.umap
+[2017.08.04-13.00.38:133][512]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap' took 0.171
+[2017.08.04-13.00.38:133][512]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.171
+[2017.08.04-13.00.38:136][512]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/UI_Challenge] ([1] browsable assets)...
+[2017.08.04-13.00.38:136][512]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI_Challenge]
+[2017.08.04-13.00.38:136][512]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI_Challenge" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/UI_Challenge_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.08.04-13.00.38:402][512]LogSavePackage: Save=205.58ms
+[2017.08.04-13.00.38:402][512]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/UI_Challenge_Auto1872F46B949E6EC6A51C1B48F7B8F59E4.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/UI_Challenge_Auto1.uasset'
+[2017.08.04-13.00.38:405][512]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/UI_Challenge_Auto1.uasset
+[2017.08.04-13.00.38:405][512]LogFileHelpers: Auto-saving content packages took 0.270
+[2017.08.04-13.01.31:704][737]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-13.01.31:728][737]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-13.01.31:728][737]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 5:01:31 PM)
+[2017.08.04-13.01.31:728][737]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-13.01.31:734][737]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005924s)
+[2017.08.04-13.01.31:735][737]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-13.01.31:735][737]LogPlayLevel: PIE: World Init took: (0.000703s)
+[2017.08.04-13.01.31:735][737]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.006886s)
+[2017.08.04-13.01.31:756][737]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-13.01.31:767][737]LogInit: FAudioDevice initialized.
+[2017.08.04-13.01.31:802][737]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-13.01.31:811][737]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-15.01.31
+[2017.08.04-13.01.31:811][737]LogWorld: Bringing up level for play took: 0.001224
+[2017.08.04-13.01.31:812][737]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-13.01.31:825][737]LogBlueprintUserMessages: [BP_ChallengeManager_52] 2
+[2017.08.04-13.01.31:827][737]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.302
+[2017.08.04-13.01.52:889][935]LogContentBrowser: Native class hierarchy updated for 'Cascade' in 0.0006 seconds. Added 2 classes and 2 folders.
+[2017.08.04-13.02.44:910][957]LogEditorTransaction: Undo Edit Constant
+[2017.08.04-13.02.51:903][369]LogEditorTransaction: Undo Edit Constant
+[2017.08.04-13.03.54:895][564]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Particles/P_Star" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/StarterContent/Particles/P_Star.uasset" SILENT=true
+[2017.08.04-13.03.54:984][564]LogSavePackage: Save=28.56ms
+[2017.08.04-13.03.54:984][564]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/P_Star8A8FB5184248D7A26CE0B98913956B15.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/StarterContent/Particles/P_Star.uasset'
+[2017.08.04-13.03.54:988][564]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/StarterContent/Particles/P_Star.uasset
+[2017.08.04-13.03.57:156][691]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-13.03.57:182][691]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-13.03.57:182][691]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 5:03:57 PM)
+[2017.08.04-13.03.57:182][691]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-13.03.57:188][691]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005882s)
+[2017.08.04-13.03.57:189][691]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-13.03.57:189][691]LogPlayLevel: PIE: World Init took: (0.000885s)
+[2017.08.04-13.03.57:189][691]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.007010s)
+[2017.08.04-13.03.57:215][691]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-13.03.57:230][691]LogInit: FAudioDevice initialized.
+[2017.08.04-13.03.57:260][691]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-13.03.57:266][691]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-15.03.57
+[2017.08.04-13.03.57:266][691]LogWorld: Bringing up level for play took: 0.001141
+[2017.08.04-13.03.57:267][691]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-13.03.57:280][691]LogBlueprintUserMessages: [BP_ChallengeManager_52] 2
+[2017.08.04-13.03.57:283][691]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.847
+[2017.08.04-13.04.19:616][746]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-13.04.19:662][746]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-13.04.19:662][746]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 5:04:19 PM)
+[2017.08.04-13.04.19:662][746]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-13.04.19:668][746]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005773s)
+[2017.08.04-13.04.19:669][746]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-13.04.19:669][746]LogPlayLevel: PIE: World Init took: (0.000759s)
+[2017.08.04-13.04.19:669][746]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.006921s)
+[2017.08.04-13.04.19:691][746]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-13.04.19:703][746]LogInit: FAudioDevice initialized.
+[2017.08.04-13.04.19:739][746]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-13.04.19:744][746]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-15.04.19
+[2017.08.04-13.04.19:745][746]LogWorld: Bringing up level for play took: 0.001112
+[2017.08.04-13.04.19:746][746]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-13.04.19:759][746]LogBlueprintUserMessages: [BP_ChallengeManager_52] 2
+[2017.08.04-13.04.19:761][746]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.368
+[2017.08.04-13.04.50:397][377]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Particles/P_Star" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/StarterContent/Particles/P_Star.uasset" SILENT=true
+[2017.08.04-13.04.50:470][377]LogSavePackage: Save=23.36ms
+[2017.08.04-13.04.50:470][377]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/P_Star4599079E4E793182D1AA13A056D21ADB.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/StarterContent/Particles/P_Star.uasset'
+[2017.08.04-13.04.50:474][377]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/StarterContent/Particles/P_Star.uasset
+[2017.08.04-13.04.59:866][904]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-13.04.59:892][904]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-13.04.59:892][904]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 5:04:59 PM)
+[2017.08.04-13.04.59:892][904]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-13.04.59:897][904]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004607s)
+[2017.08.04-13.04.59:898][904]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-13.04.59:898][904]LogPlayLevel: PIE: World Init took: (0.000661s)
+[2017.08.04-13.04.59:898][904]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.005464s)
+[2017.08.04-13.04.59:923][904]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-13.04.59:935][904]LogInit: FAudioDevice initialized.
+[2017.08.04-13.04.59:969][904]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-13.04.59:975][904]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-15.04.59
+[2017.08.04-13.04.59:975][904]LogWorld: Bringing up level for play took: 0.001154
+[2017.08.04-13.04.59:976][904]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-13.04.59:988][904]LogBlueprintUserMessages: [BP_ChallengeManager_52] 0
+[2017.08.04-13.04.59:991][904]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.138
+[2017.08.04-13.05.21:104][105]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_C_CHILDACTOR_37.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-13.05.22:221][170]BlueprintLog: New page: Compile BP_Pickable
+[2017.08.04-13.05.22:339][170]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_C_CHILDACTOR_34.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-13.05.24:487][291]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-13.05.24:514][291]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-13.05.24:514][291]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 5:05:24 PM)
+[2017.08.04-13.05.24:514][291]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-13.05.24:520][291]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005857s)
+[2017.08.04-13.05.24:521][291]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-13.05.24:521][291]LogPlayLevel: PIE: World Init took: (0.000883s)
+[2017.08.04-13.05.24:522][291]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.007038s)
+[2017.08.04-13.05.24:545][291]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-13.05.24:556][291]LogInit: FAudioDevice initialized.
+[2017.08.04-13.05.24:587][291]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-13.05.24:595][291]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-15.05.24
+[2017.08.04-13.05.24:595][291]LogWorld: Bringing up level for play took: 0.001140
+[2017.08.04-13.05.24:596][291]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-13.05.24:608][291]LogBlueprintUserMessages: [BP_ChallengeManager_52] 2
+[2017.08.04-13.05.24:610][291]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.481
+[2017.08.04-13.11.47:514][717]LogSavePackage: Save=57.54ms
+[2017.08.04-13.11.47:514][717]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/VehicleAdvExampleMap_Auto2FB9B404C434B0B6037B8E79D9A86EF41.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto2.umap'
+[2017.08.04-13.11.47:517][717]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto2.umap
+[2017.08.04-13.11.47:520][717]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap' took 0.149
+[2017.08.04-13.11.47:520][717]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.149
+[2017.08.04-13.11.47:521][717]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/BP_Pickable] ([1] browsable assets)...
+[2017.08.04-13.11.47:575][717]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/BP_Pickable.BP_Pickable]
+[2017.08.04-13.11.47:575][717]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_Pickable]
+[2017.08.04-13.11.47:575][717]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Pickable" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/BP_Pickable_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.08.04-13.11.47:667][717]LogSavePackage: Save=37.17ms
+[2017.08.04-13.11.47:668][717]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/BP_Pickable_Auto273E5F924400092A3594BC2BC0269E7D7.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/BP_Pickable_Auto2.uasset'
+[2017.08.04-13.11.47:669][717]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/Autosaves/Game/BP_Pickable_Auto2.uasset
+[2017.08.04-13.11.47:669][717]LogFileHelpers: Auto-saving content packages took 0.148
+[2017.08.04-13.14.51:821][ 55]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-16.09.32:190][890]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x10d2059ffe8 [can pipeline])
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: libcurl info message cache 1 (Re-using existing connection! (#24) with host datarouter.ol.epicgames.com)
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (52.202.221.101) port 443 (#24))
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: libcurl info message cache 3 (SSL read: error:00000000:lib(0):func(0):reason(0), errno 10054)
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: libcurl info message cache 4 (Connection died, retrying a fresh connect)
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: libcurl info message cache 5 (Closing connection 24)
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: libcurl info message cache 6 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B6044FCDD-43A1-6C36-6BA1-279A3E9D35D1%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.2-3514769%2B%2B%2BUE4%2BRelease-4.16&UserID=e9e339d64747eae95e4d3e90320f3f6a%7C2824f1fe42ef4d01a9e76d581537b65c%7C42ea1933-e0f8-4a5b-885a-6f7226e6db71&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: libcurl info message cache 7 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.08.04-16.09.32:191][890]LogHttp:Warning: 0000010D9835E080: libcurl info message cache 8 (Closing connection 25)
+[2017.08.04-16.55.45:943][210]LogRenderer: Reallocating scene render targets to support 1368x588 NumSamples 1 (Frame:29877).
+[2017.08.04-16.57.02:401][733]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-16.57.02:547][733]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-16.57.02:547][733]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 8:57:02 PM)
+[2017.08.04-16.57.02:548][733]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-16.57.02:573][733]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024895s)
+[2017.08.04-16.57.02:577][733]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-16.57.02:578][733]LogPlayLevel: PIE: World Init took: (0.005189s)
+[2017.08.04-16.57.02:579][733]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.031255s)
+[2017.08.04-16.57.02:673][733]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-16.57.02:686][733]LogInit: FAudioDevice initialized.
+[2017.08.04-16.57.02:719][733]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-16.57.02:728][733]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-18.57.02
+[2017.08.04-16.57.02:728][733]LogWorld: Bringing up level for play took: 0.002848
+[2017.08.04-16.57.02:732][733]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-16.57.02:755][733]LogBlueprintUserMessages: [BP_ChallengeManager_52] 1
+[2017.08.04-16.57.02:761][733]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.638
+[2017.08.04-16.58.34:057][151]LogBlueprintUserMessages: [BP_ChallengeManager_52] 1
+[2017.08.04-16.59.21:597][973]LogBlueprintUserMessages: [BP_ChallengeManager_52] 0
+[2017.08.04-17.00.14:938][137]LogBlueprintUserMessages: [BP_ChallengeManager_52] 1
+[2017.08.04-17.00.58:528][720]LogBlueprintUserMessages: [BP_ChallengeManager_52] 0
+[2017.08.04-17.01.50:204][776]LogBlueprintUserMessages: [BP_ChallengeManager_52] 0
+[2017.08.04-17.02.27:009][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownText:0027
+[2017.08.04-17.02.27:009][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetAccelerationText:0027
+[2017.08.04-17.02.27:009][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetSpeedText:001F
+[2017.08.04-17.02.27:009][956]LogScript:Warning: Accessed None
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetSpeedText:0034
+[2017.08.04-17.02.27:009][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetHeight:001F
+[2017.08.04-17.02.27:009][956]LogScript:Warning: Accessed None
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetHeight:0034
+[2017.08.04-17.02.27:009][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetHeight:005D
+[2017.08.04-17.02.27:009][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:DebugBind:003D
+[2017.08.04-17.02.27:009][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetExtraLives:003D
+[2017.08.04-17.02.27:012][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent:0027
+[2017.08.04-17.02.27:012][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent:0046
+[2017.08.04-17.02.27:012][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent:008A
+[2017.08.04-17.02.27:012][956]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:012][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent:0027
+[2017.08.04-17.02.27:013][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent:0046
+[2017.08.04-17.02.27:013][956]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent:008A
+[2017.08.04-17.02.27:013][956]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:024][957]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownText:0027
+[2017.08.04-17.02.27:024][957]LogScript:Warning: Attempted to access BP_Marble_C_0 via property Player, but BP_Marble_C_0 is pending kill
+	UI_Run_C /Engine/Transient.UnrealEdEngine_0:GameInstance_9.UI_Run_C_9
+	Function /Game/UI_Run.UI_Run_C:GetAccelerationText:0027
+[2017.08.04-17.02.27:027][957]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:027][957]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:045][958]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:045][958]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:061][959]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:061][959]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:077][960]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:078][960]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:094][961]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:094][961]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:110][962]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:110][962]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:128][963]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:128][963]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:144][964]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:144][964]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:161][965]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:161][965]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:178][966]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:178][966]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:194][967]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:194][967]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:212][968]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:212][968]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:227][969]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:227][969]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:262][970]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:262][970]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:276][971]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:276][971]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:293][972]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:293][972]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:308][973]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:308][973]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:326][974]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:326][974]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:343][975]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:343][975]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:359][976]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:359][976]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:375][977]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:375][977]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:392][978]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:392][978]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:408][979]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:408][979]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:425][980]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:425][980]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:442][981]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:443][981]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:458][982]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:459][982]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:475][983]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:475][983]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:491][984]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:491][984]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:508][985]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:508][985]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:525][986]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:525][986]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:543][987]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:543][987]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:558][988]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:559][988]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:576][989]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:576][989]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:594][990]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:594][990]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:609][991]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:609][991]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:625][992]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:625][992]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:643][993]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:643][993]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:659][994]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:659][994]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:675][995]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:676][995]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:692][996]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:692][996]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:708][997]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:708][997]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:725][998]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:725][998]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:741][999]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:741][999]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:758][  0]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:758][  0]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:774][  1]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:774][  1]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:791][  2]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:792][  2]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:808][  3]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:808][  3]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:826][  4]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:826][  4]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:843][  5]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:843][  5]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:858][  6]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:858][  6]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:875][  7]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:875][  7]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:891][  8]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:891][  8]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:908][  9]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:908][  9]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:925][ 10]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:925][ 10]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:941][ 11]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:941][ 11]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:958][ 12]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:958][ 12]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:974][ 13]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:974][ 13]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:991][ 14]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.27:991][ 14]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:007][ 15]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:007][ 15]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:025][ 16]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:025][ 16]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:042][ 17]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:042][ 17]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:057][ 18]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:057][ 18]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:075][ 19]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:075][ 19]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:090][ 20]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:090][ 20]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:108][ 21]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:108][ 21]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:126][ 22]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:126][ 22]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:141][ 23]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:141][ 23]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:159][ 24]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:159][ 24]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:174][ 25]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:174][ 25]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:192][ 26]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:192][ 26]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:208][ 27]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:208][ 27]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:225][ 28]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:225][ 28]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:243][ 29]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:243][ 29]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:257][ 30]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:257][ 30]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:279][ 31]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:279][ 31]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:295][ 32]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:295][ 32]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:311][ 33]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:311][ 33]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:328][ 34]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:328][ 34]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:344][ 35]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:344][ 35]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:361][ 36]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:361][ 36]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:377][ 37]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:377][ 37]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:393][ 38]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:394][ 38]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:411][ 39]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownColor
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.02.28:411][ 39]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/UI_Run.UI_Run_C:GetJumpCooldownPercent
+
+[2017.08.04-17.03.19:702][571]AssetReimport: New page: Outstanding source content changes 9:03:19 PM
+[2017.08.04-17.03.19:705][571]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.fbx)
+[2017.08.04-17.03.19:727][571]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.08.04-17.03.19:727][571]LogFbx: ItemName: Geometry, ItemCount : 1
+[2017.08.04-17.03.19:727][571]LogFbx: ItemName: Model, ItemCount : 1
+[2017.08.04-17.03.19:737][571]LogFbx: Loading FBX Scene from C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.fbx
+[2017.08.04-17.03.19:747][571]LogFbx: FBX Scene Loaded Succesfully
+[2017.08.04-17.03.23:259][571]LogFbx: Loading FBX Scene from C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.fbx
+[2017.08.04-17.03.23:267][571]LogFbx: FBX Scene Loaded Succesfully
+[2017.08.04-17.03.23:300][571]LogStaticMesh: Building static mesh bonus_2x...
+[2017.08.04-17.03.23:307][571]LogStaticMesh: Built static mesh [0.01s] /Game/Models/bonus_2x.bonus_2x
+[2017.08.04-17.03.23:401][572]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/bonus_2x" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.uasset" SILENT=true
+[2017.08.04-17.03.23:424][572]LogSavePackage: Save=20.34ms
+[2017.08.04-17.03.23:425][572]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/bonus_2xAB3046EB48CD4BFC9F240499BCDECC35.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.uasset'
+[2017.08.04-17.03.23:429][572]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.uasset
+[2017.08.04-17.03.26:448][747]AssetReimport: Info Importing new asset /Game/Models/bonus_2x.
+[2017.08.04-17.05.02:663][492]LogRenderer: Reallocating scene render targets to support 1528x996 NumSamples 1 (Frame:1).
+[2017.08.04-17.10.28:229][459]LogMetaData: Removing '/Game/BP_Pickable_Star.SKEL_BP_Pickable_Star_C' ref from Metadata '/Game/BP_Pickable_2.PackageMetaData'
+[2017.08.04-17.10.28:229][459]LogMetaData: Removing '/Game/BP_Pickable_Star.BP_Pickable_Star_C' ref from Metadata '/Game/BP_Pickable_2.PackageMetaData'
+[2017.08.04-17.10.28:242][459]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Pickable_Star" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable_Star.uasset" SILENT=true
+[2017.08.04-17.10.28:287][459]LogSavePackage: Save=42.81ms
+[2017.08.04-17.10.28:287][459]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/BP_Pickable_Star92CB17D348F62947DF83488F442DB0C0.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable_Star.uasset'
+[2017.08.04-17.10.28:291][459]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable_Star.uasset
+[2017.08.04-17.32.23:057][990]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-17.32.26:068][ 95]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-17.32.26:283][ 95]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-17.32.26:316][ 95]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-17.32.26:373][ 95]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_47, compiling. 
+[2017.08.04-17.32.26:381][ 95]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-17.32.26:389][ 95]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_46, compiling. 
+[2017.08.04-17.32.26:398][ 95]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_49, compiling. 
+[2017.08.04-17.32.26:406][ 95]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_50, compiling. 
+[2017.08.04-17.32.26:415][ 95]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_51, compiling. 
+[2017.08.04-17.32.26:422][ 95]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_18, compiling. 
+[2017.08.04-17.32.26:429][ 95]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.08.04-17.32.26:436][ 95]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-17.32.27:020][110]Cmd: SELECT NONE
+[2017.08.04-17.32.28:763][178]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-17.32.28:763][178]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-17.32.28:763][178]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-17.32.28:763][178]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-17.32.30:453][245]LogWindows: LaunchURL http://docs.unrealengine.com/latest/INT/index.html?utm_source=editor&utm_medium=docs&utm_campaign=help_menu
+[2017.08.04-17.32.43:695][660]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/M_Multiplier" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset" SILENT=true
+[2017.08.04-17.32.43:736][660]LogSavePackage: Save=38.62ms
+[2017.08.04-17.32.43:736][660]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/M_Multiplier799ADB5744804F76992F0892ECAAD07C.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset'
+[2017.08.04-17.32.43:746][660]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset
+[2017.08.04-17.35.36:840][ 76]AssetReimport: New page: Outstanding source content changes 9:35:36 PM
+[2017.08.04-17.35.36:843][ 76]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier_edges.png)
+[2017.08.04-17.35.36:922][ 77]LogEditorFactories: Performing atomic reimport of [C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.fbx]
+[2017.08.04-17.35.36:934][ 77]LogFbx: Loading FBX Scene from C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.fbx
+[2017.08.04-17.35.36:943][ 77]LogFbx: FBX Scene Loaded Succesfully
+[2017.08.04-17.35.36:974][ 77]LogStaticMesh: Building static mesh bonus_2x...
+[2017.08.04-17.35.36:983][ 77]LogStaticMesh: Built static mesh [0.01s] /Game/Models/bonus_2x.bonus_2x
+[2017.08.04-17.35.36:985][ 77]LogEditorFactories: -- imported successfully
+[2017.08.04-17.35.37:089][ 78]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/multiplier_edges" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier_edges.uasset" SILENT=true
+[2017.08.04-17.35.37:112][ 78]LogSavePackage: Save=20.62ms
+[2017.08.04-17.35.37:112][ 78]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/multiplier_edges3166E36E45F1C866A08FBFA93E1EB979.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier_edges.uasset'
+[2017.08.04-17.35.37:115][ 78]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier_edges.uasset
+[2017.08.04-17.35.37:134][ 78]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/bonus_2x" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.uasset" SILENT=true
+[2017.08.04-17.35.37:220][ 78]LogSavePackage: Save=19.20ms
+[2017.08.04-17.35.37:220][ 78]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/bonus_2x09B6600D45F4DE58AE42178047675357.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.uasset'
+[2017.08.04-17.35.37:224][ 78]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.uasset
+[2017.08.04-17.35.40:291][177]AssetReimport: Info Importing new asset /Game/Textures/multiplier_edges.
+[2017.08.04-17.35.40:291][177]AssetReimport: Info Reimported asset bonus_2x from C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.fbx.
+[2017.08.04-17.35.41:567][218]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-17.35.41:592][218]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.08.04-17.35.44:427][321]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-17.35.44:427][321]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-17.35.44:427][321]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-17.35.44:427][321]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-17.36.11:528][388]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-17.36.11:552][388]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-17.36.14:946][516]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-17.36.14:946][516]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-17.36.14:946][516]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-17.36.14:946][516]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-17.36.21:334][765]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-17.36.21:355][765]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-17.36.23:757][855]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-17.36.23:757][855]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-17.36.23:757][855]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-17.36.23:757][855]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-17.36.40:228][501]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0010 seconds. Added 1 classes and 2 folders.
+[2017.08.04-17.37.41:340][  7]AssetReimport: New page: Outstanding source content changes 9:37:41 PM
+[2017.08.04-17.37.41:341][  7]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.png)
+[2017.08.04-17.37.41:422][  8]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/multiplier" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.uasset" SILENT=true
+[2017.08.04-17.37.41:436][  8]LogSavePackage: Save=11.77ms
+[2017.08.04-17.37.41:436][  8]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/multiplier916D22D740DFD1F2BF619CA5F599A0F5.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.uasset'
+[2017.08.04-17.37.41:439][  8]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.uasset
+[2017.08.04-17.37.44:448][121]AssetReimport: Info Importing new asset /Game/Textures/multiplier.
+[2017.08.04-17.37.51:578][355]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-17.37.51:600][355]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_46, compiling. 
+[2017.08.04-17.37.54:042][458]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-17.37.54:042][458]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-17.37.54:042][458]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-17.37.54:043][458]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-17.40.03:423][ 20]AssetReimport: New page: Outstanding source content changes 9:40:03 PM
+[2017.08.04-17.40.03:425][ 20]LogEditorFactories: Performing atomic reimport of [C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.png]
+[2017.08.04-17.40.03:425][ 20]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.png)
+[2017.08.04-17.40.03:450][ 20]LogEditorFactories: -- imported successfully
+[2017.08.04-17.40.03:502][ 21]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/multiplier" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.uasset" SILENT=true
+[2017.08.04-17.40.03:571][ 21]LogSavePackage: Save=13.33ms
+[2017.08.04-17.40.03:571][ 21]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/multiplier654B0CEC461E413E68CC248849223B83.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.uasset'
+[2017.08.04-17.40.03:575][ 21]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.uasset
+[2017.08.04-17.40.06:591][133]AssetReimport: Info Reimported asset multiplier from C:/Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/multiplier.png.
+[2017.08.04-17.40.33:784][918]LogMaterialEditor: Saving and Compiling material M_Multiplier
+[2017.08.04-17.40.34:568][918]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-17.40.34:610][918]LogMaterial: Missing cached shader map for material M_Multiplier, compiling. 
+[2017.08.04-17.40.34:666][918]LogMaterial: Missing cached shader map for material M_Multiplier, compiling. 
+[2017.08.04-17.40.34:782][918]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_Multiplier, compiling. 
+[2017.08.04-17.40.36:463][918]TextureStreamingBuild:Display: Compiling optional shaders took 1.719 seconds.
+[2017.08.04-17.40.39:335][918]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/M_Multiplier" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset" SILENT=true
+[2017.08.04-17.40.39:422][918]LogSavePackage: Save=30.81ms
+[2017.08.04-17.40.39:422][918]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/M_Multiplier25219B6746B8DC15875590B4C94794A8.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset'
+[2017.08.04-17.40.39:426][918]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset
+[2017.08.04-17.43.38:180][534]LogSavePackage: Save=60.89ms
+[2017.08.04-17.43.38:180][534]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/VehicleAdvExampleMapE4DCE1864D6AB6805791CEA75D28C462.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap'
+[2017.08.04-17.43.38:187][534]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
+[2017.08.04-17.43.38:239][534]LogFileHelpers: Saving map 'VehicleAdvExampleMap' took 0.261
+[2017.08.04-17.43.38:254][534]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Pickable" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable.uasset" SILENT=true
+[2017.08.04-17.43.38:351][534]LogSavePackage: Save=37.13ms
+[2017.08.04-17.43.38:351][534]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/BP_Pickable38CC02434B56CB5A45D56C996DD4672D.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable.uasset'
+[2017.08.04-17.43.38:357][534]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable.uasset
+[2017.08.04-17.43.38:358][534]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI_Challenge" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/UI_Challenge.uasset" SILENT=true
+[2017.08.04-17.43.38:595][534]LogSavePackage: Save=180.37ms
+[2017.08.04-17.43.38:595][534]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/UI_Challenge57C96A4549D4EDB8A1193EA51E67C967.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/UI_Challenge.uasset'
+[2017.08.04-17.43.38:601][534]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/UI_Challenge.uasset
+[2017.08.04-17.43.38:616][534]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/bonus_2x" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.uasset" SILENT=true
+[2017.08.04-17.43.38:693][534]LogSavePackage: Save=16.99ms
+[2017.08.04-17.43.38:693][534]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/bonus_2x8CD85DCF45CA216D2F6E4D81545E7C42.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.uasset'
+[2017.08.04-17.43.38:697][534]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Models/bonus_2x.uasset
+[2017.08.04-17.43.38:714][534]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Pickable_Multiplier" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable_Multiplier.uasset" SILENT=true
+[2017.08.04-17.43.38:747][534]LogSavePackage: Save=31.04ms
+[2017.08.04-17.43.38:747][534]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/BP_Pickable_Multiplier365697734C466AC6340F28B7B8706A35.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable_Multiplier.uasset'
+[2017.08.04-17.43.38:751][534]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable_Multiplier.uasset
+[2017.08.04-17.43.38:769][534]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Pickable_Star" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable_Star.uasset" SILENT=true
+[2017.08.04-17.43.38:800][534]LogSavePackage: Save=29.67ms
+[2017.08.04-17.43.38:801][534]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/BP_Pickable_StarB5E6B8334498D0EDBA36F5856A62678A.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable_Star.uasset'
+[2017.08.04-17.43.38:804][534]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/BP_Pickable_Star.uasset
+[2017.08.04-17.43.47:728][845]BlueprintLog: New page: Compile BP_Pickable_Star
+[2017.08.04-17.44.04:203][529]BlueprintLog: New page: Compile BP_Pickable
+[2017.08.04-17.44.04:248][529]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-17.44.04:556][529]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-17.44.04:557][529]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_C_CHILDACTOR_57.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-17.44.04:561][529]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_C_CHILDACTOR_59.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-17.44.21:851][298]LogCascade: Quitting Cascade. FXSystem=0x0000010DBBFDF7E0
+[2017.08.04-18.02.45:898][446]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.03.00:990][ 76]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.03.00:993][ 76]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.03.07:887][367]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.03.07:893][367]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.03.13:985][609]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.03.13:994][609]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.03.28:232][203]BlueprintLog: New page: Compile BP_Floor
+[2017.08.04-18.03.36:590][513]BlueprintLog: New page: Compile BP_Floor
+[2017.08.04-18.03.46:340][882]BlueprintLog: New page: Compile BP_Floor
+[2017.08.04-18.03.59:651][407]BlueprintLog: New page: Compile BP_Floor
+[2017.08.04-18.03.59:763][407]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.04.00:032][407]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.04.00:078][407]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.04.14:294][994]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-18.04.14:369][994]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.08.04-18.04.14:369][994]LogPlayLevel: [PlayLevel] Compiling UI_Challenge before play...
+[2017.08.04-18.04.14:683][994]LogPlayLevel: PlayLevel: Blueprint regeneration took 314 ms (1 blueprints)
+[2017.08.04-18.04.14:683][994]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 10:04:14 PM)
+[2017.08.04-18.04.14:683][994]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-18.04.14:696][994]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013226s)
+[2017.08.04-18.04.14:697][994]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-18.04.14:698][994]LogPlayLevel: PIE: World Init took: (0.001507s)
+[2017.08.04-18.04.14:698][994]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.015178s)
+[2017.08.04-18.04.14:738][994]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-18.04.14:756][994]LogInit: FAudioDevice initialized.
+[2017.08.04-18.04.14:791][994]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-18.04.14:800][994]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-20.04.14
+[2017.08.04-18.04.14:800][994]LogWorld: Bringing up level for play took: 0.001600
+[2017.08.04-18.04.14:802][994]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-18.04.14:821][994]LogBlueprintUserMessages: [BP_ChallengeManager_52] 1
+[2017.08.04-18.04.14:824][994]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.701
+[2017.08.04-18.04.50:441][775]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.04.50:480][775]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.04.50:584][777]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.04.50:622][777]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.04.50:659][777]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.04.50:696][777]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.04.50:732][777]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.04.50:768][777]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.04.51:015][785]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.04.51:053][785]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.04.51:091][785]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.04.51:128][785]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.04.51:166][785]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.04.51:202][785]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.04.51:377][790]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-18.04.51:422][790]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.04.51:461][790]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.04.55:727][939]MaterialEditorStats: Info Base pass shader: 107 instructions
+[2017.08.04-18.04.55:727][939]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-18.04.55:727][939]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-18.04.55:727][939]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-18.05.08:594][411]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-18.05.08:628][411]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.05.12:483][537]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-18.05.12:483][537]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-18.05.12:483][537]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-18.05.12:483][537]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-18.05.16:647][690]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-18.05.16:674][690]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.05.20:493][816]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-18.05.20:493][816]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-18.05.20:493][816]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-18.05.20:493][816]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-18.05.20:777][827]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-18.05.20:809][827]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.05.24:371][940]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-18.05.24:371][940]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-18.05.24:371][940]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-18.05.24:371][940]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-18.05.33:447][275]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-18.05.33:472][275]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_5, compiling. 
+[2017.08.04-18.05.37:469][407]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-18.05.37:469][407]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-18.05.37:469][407]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-18.05.37:469][407]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-18.05.40:461][518]LogMaterialEditor: Saving and Compiling material M_Multiplier
+[2017.08.04-18.05.41:431][518]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-18.05.41:469][518]LogMaterial: Missing cached shader map for material M_Multiplier, compiling. 
+[2017.08.04-18.05.41:538][518]LogMaterial: Missing cached shader map for material M_Multiplier, compiling. 
+[2017.08.04-18.05.41:652][518]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_Multiplier, compiling. 
+[2017.08.04-18.05.43:623][518]TextureStreamingBuild:Display: Compiling optional shaders took 1.987 seconds.
+[2017.08.04-18.05.47:326][518]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/M_Multiplier" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset" SILENT=true
+[2017.08.04-18.05.47:430][518]LogSavePackage: Save=36.95ms
+[2017.08.04-18.05.47:430][518]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/M_Multiplier75BFA62D4694CCC5160E568DCFAB09D9.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset'
+[2017.08.04-18.05.47:435][518]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset
+[2017.08.04-18.05.50:768][655]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-18.05.50:827][655]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-18.05.50:828][655]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 10:05:50 PM)
+[2017.08.04-18.05.50:828][655]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-18.05.50:836][655]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007942s)
+[2017.08.04-18.05.50:837][655]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-18.05.50:837][655]LogPlayLevel: PIE: World Init took: (0.001124s)
+[2017.08.04-18.05.50:837][655]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.009372s)
+[2017.08.04-18.05.50:878][655]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-18.05.50:896][655]LogInit: FAudioDevice initialized.
+[2017.08.04-18.05.50:930][655]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-18.05.50:937][655]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-20.05.50
+[2017.08.04-18.05.50:938][655]LogWorld: Bringing up level for play took: 0.001434
+[2017.08.04-18.05.50:939][655]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-18.05.50:956][655]LogBlueprintUserMessages: [BP_ChallengeManager_52] 2
+[2017.08.04-18.05.50:960][655]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.837
+[2017.08.04-18.06.09:919][443]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.06.09:936][443]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.06.09:938][443]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_72.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.06.09:946][443]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_74.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.06.11:494][496]BlueprintLog: New page: Compile BP_Pickable_Multiplier
+[2017.08.04-18.06.11:525][496]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.06.11:713][496]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.06.11:717][496]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_51.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.06.11:724][496]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_53.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.06.14:591][609]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-18.06.14:656][609]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-18.06.14:656][609]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 10:06:14 PM)
+[2017.08.04-18.06.14:656][609]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-18.06.14:666][609]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009447s)
+[2017.08.04-18.06.14:667][609]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-18.06.14:667][609]LogPlayLevel: PIE: World Init took: (0.001001s)
+[2017.08.04-18.06.14:667][609]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.010783s)
+[2017.08.04-18.06.14:716][609]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-18.06.14:738][609]LogInit: FAudioDevice initialized.
+[2017.08.04-18.06.14:775][609]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-18.06.14:784][609]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-20.06.14
+[2017.08.04-18.06.14:784][609]LogWorld: Bringing up level for play took: 0.001881
+[2017.08.04-18.06.14:786][609]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-18.06.14:816][609]LogBlueprintUserMessages: [BP_ChallengeManager_52] 1
+[2017.08.04-18.06.14:819][609]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.696
+[2017.08.04-18.07.31:380][393]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.07.31:396][393]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_101.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.07.31:397][393]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.07.31:400][393]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_103.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.07.37:472][598]BlueprintLog: New page: Compile BP_Pickable_Multiplier
+[2017.08.04-18.07.37:508][598]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.07.37:695][598]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_60.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.07.37:697][598]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.07.37:700][598]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_62.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.07.48:065][908]BlueprintLog: New page: Compile BP_Pickable_Multiplier
+[2017.08.04-18.07.48:102][908]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.07.48:288][908]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_60.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.07.48:290][908]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.07.48:292][908]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_62.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.07.50:577][988]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-18.07.50:636][988]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-18.07.50:636][988]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 10:07:50 PM)
+[2017.08.04-18.07.50:636][988]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-18.07.50:648][988]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012337s)
+[2017.08.04-18.07.50:649][988]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-18.07.50:649][988]LogPlayLevel: PIE: World Init took: (0.000992s)
+[2017.08.04-18.07.50:650][988]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.013728s)
+[2017.08.04-18.07.50:688][988]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-18.07.50:703][988]LogInit: FAudioDevice initialized.
+[2017.08.04-18.07.50:737][988]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-18.07.50:746][988]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-20.07.50
+[2017.08.04-18.07.50:746][988]LogWorld: Bringing up level for play took: 0.001835
+[2017.08.04-18.07.50:748][988]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-18.07.50:774][988]LogBlueprintUserMessages: [BP_ChallengeManager_52] 1
+[2017.08.04-18.07.50:778][988]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.654
+[2017.08.04-18.08.22:005][337]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-18.08.22:028][337]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.08.26:289][466]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-18.08.26:333][466]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_4, compiling. 
+[2017.08.04-18.08.29:604][572]LogMaterialEditor: Saving and Compiling material M_Multiplier
+[2017.08.04-18.08.30:764][572]LogMaterial: Missing cached shader map for material M_Star_2, compiling. 
+[2017.08.04-18.08.30:808][572]LogMaterial: Missing cached shader map for material M_Multiplier, compiling. 
+[2017.08.04-18.08.30:872][572]LogMaterial: Missing cached shader map for material M_Multiplier, compiling. 
+[2017.08.04-18.08.30:996][572]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_Multiplier, compiling. 
+[2017.08.04-18.08.32:857][572]TextureStreamingBuild:Display: Compiling optional shaders took 1.873 seconds.
+[2017.08.04-18.08.36:436][572]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/M_Multiplier" FILE="../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset" SILENT=true
+[2017.08.04-18.08.36:530][572]LogSavePackage: Save=33.86ms
+[2017.08.04-18.08.36:530][572]LogSavePackage: Moving '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Saved/M_MultiplierC09F0EC3437AB4EC6A0F64A3C6A73A6F.tmp' to '../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset'
+[2017.08.04-18.08.36:534][572]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Acer/Documents/Middleware/MarbleRun/Content/Textures/M_Multiplier.uasset
+[2017.08.04-18.08.36:565][572]MaterialEditorStats: Info Base pass shader: 111 instructions
+[2017.08.04-18.08.36:565][572]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.08.04-18.08.36:565][572]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.08.04-18.08.36:565][572]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.08.04-18.08.55:370][290]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-18.08.55:436][290]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-18.08.55:436][290]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 10:08:55 PM)
+[2017.08.04-18.08.55:436][290]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-18.08.55:448][290]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011469s)
+[2017.08.04-18.08.55:449][290]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-18.08.55:450][290]LogPlayLevel: PIE: World Init took: (0.001793s)
+[2017.08.04-18.08.55:450][290]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.013813s)
+[2017.08.04-18.08.55:494][290]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-18.08.55:512][290]LogInit: FAudioDevice initialized.
+[2017.08.04-18.08.55:550][290]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-18.08.55:558][290]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-20.08.55
+[2017.08.04-18.08.55:558][290]LogWorld: Bringing up level for play took: 0.001577
+[2017.08.04-18.08.55:560][290]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-18.08.55:590][290]LogBlueprintUserMessages: [BP_ChallengeManager_52] 2
+[2017.08.04-18.08.55:595][290]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.528
+[2017.08.04-18.10.10:461][380]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-18.10.10:514][380]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-18.10.10:514][380]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 10:10:10 PM)
+[2017.08.04-18.10.10:515][380]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-18.10.10:523][380]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008627s)
+[2017.08.04-18.10.10:525][380]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-18.10.10:525][380]LogPlayLevel: PIE: World Init took: (0.001982s)
+[2017.08.04-18.10.10:526][380]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.011267s)
+[2017.08.04-18.10.10:570][380]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-18.10.10:588][380]LogInit: FAudioDevice initialized.
+[2017.08.04-18.10.10:624][380]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-18.10.10:631][380]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-20.10.10
+[2017.08.04-18.10.10:631][380]LogWorld: Bringing up level for play took: 0.001520
+[2017.08.04-18.10.10:633][380]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-18.10.10:663][380]LogBlueprintUserMessages: [BP_ChallengeManager_52] 1
+[2017.08.04-18.10.10:667][380]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.544
+[2017.08.04-18.10.26:819][  3]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.10.26:840][  3]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.10.26:842][  3]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_108.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.10.26:846][  3]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_110.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.10.28:267][ 50]BlueprintLog: New page: Compile BP_Pickable_Multiplier
+[2017.08.04-18.10.28:299][ 50]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.10.28:478][ 50]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.10.28:480][ 50]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_51.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.10.28:485][ 50]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_53.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.10.30:703][131]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-18.10.30:769][131]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-18.10.30:769][131]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 10:10:30 PM)
+[2017.08.04-18.10.30:769][131]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-18.10.30:779][131]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009912s)
+[2017.08.04-18.10.30:780][131]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-18.10.30:780][131]LogPlayLevel: PIE: World Init took: (0.001082s)
+[2017.08.04-18.10.30:781][131]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.011405s)
+[2017.08.04-18.10.30:819][131]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-18.10.30:835][131]LogInit: FAudioDevice initialized.
+[2017.08.04-18.10.30:868][131]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-18.10.30:876][131]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-20.10.30
+[2017.08.04-18.10.30:876][131]LogWorld: Bringing up level for play took: 0.001519
+[2017.08.04-18.10.30:877][131]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-18.10.30:906][131]LogBlueprintUserMessages: [BP_ChallengeManager_52] 0
+[2017.08.04-18.10.30:910][131]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.787
+[2017.08.04-18.10.48:743][779]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.10.48:758][779]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.10.48:759][779]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_99.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.10.48:763][779]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_101.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.10.49:938][820]BlueprintLog: New page: Compile BP_Pickable_Multiplier
+[2017.08.04-18.10.49:968][820]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.10.50:129][820]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.10.50:131][820]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_51.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.10.50:136][820]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_53.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.10.52:275][903]LogTemp: Repeting last play command: Selected Viewport
+[2017.08.04-18.10.52:322][903]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.04-18.10.52:322][903]PIE: New page: PIE session: VehicleAdvExampleMap (Aug 4, 2017, 10:10:52 PM)
+[2017.08.04-18.10.52:322][903]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2017.08.04-18.10.52:330][903]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007633s)
+[2017.08.04-18.10.52:330][903]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2017.08.04-18.10.52:331][903]LogPlayLevel: PIE: World Init took: (0.000872s)
+[2017.08.04-18.10.52:331][903]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.008762s)
+[2017.08.04-18.10.52:368][903]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.04-18.10.52:381][903]LogInit: FAudioDevice initialized.
+[2017.08.04-18.10.52:417][903]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2017.08.04-18.10.52:424][903]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 60) at 2017.08.04-20.10.52
+[2017.08.04-18.10.52:424][903]LogWorld: Bringing up level for play took: 0.001287
+[2017.08.04-18.10.52:425][903]LogBlueprintUserMessages: [BP_Marble_C_0] Timer started
+[2017.08.04-18.10.52:449][903]LogBlueprintUserMessages: [BP_ChallengeManager_52] 2
+[2017.08.04-18.10.52:452][903]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.329
+[2017.08.04-18.11.20:899][419]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.11.20:915][419]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.11.20:917][419]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_115.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.11.20:921][419]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_117.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.11.24:041][524]BlueprintLog: New page: Compile BP_Pickable_Multiplier
+[2017.08.04-18.11.24:073][524]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.11.24:215][524]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array SpawnPoints of length 0!
+[2017.08.04-18.11.24:217][524]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_51.Root) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.04-18.11.24:221][524]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.DESTROYED_BP_Pickable_Multiplier_C_CHILDACTOR_53.Root) Trying to register component with IsPendingKill() == true. Aborting.
